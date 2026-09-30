@@ -155,7 +155,6 @@ def main():
             for i in range(len(elegidos)):
                 print("Ultima moneda para " if elegidos[i] else "Primera moneda para ", end="")
                 print("Sophia; " if not (i % 2) else "Mateo; ", end="")
-
         else:
             print("El archivo no contiene datos válidos")
             sys.exit(1)

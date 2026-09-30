@@ -81,6 +81,8 @@ T(N) = O(N^2 + N + N + N^2) = O(N^2)
 
 El algoritmo para reconstruir la solucion
 """
+import sys
+
 def elegir(monedas):
     opt = [[0] * len(monedas) for i in range(len(monedas))]
     
@@ -106,9 +108,13 @@ def elegir(monedas):
             opt[i][j] = max(monedas[i] + opt_i, monedas[j] + opt_j)
             
             
-    return opt
+    sol = solucion(opt, monedas, [], 0, len(opt) - 1)
+    return sol
 
 def solucion(opt, monedas, s, i, j):
+    if i > j:
+        return s
+    
     if i == j:
         s.append(i)
         return s
@@ -130,18 +136,32 @@ def solucion(opt, monedas, s, i, j):
             return solucion(opt, monedas, s, i + 1, j - 1)
         else:
             return solucion(opt, monedas, s, i, j - 2)
+
+def procesar_texto(archivo):
+    with open(archivo, "r") as arc:
+        arc.readline()
+        linea = arc.readline().strip()
+        monedas = [int(x) for x in linea.split(";")]
+    return monedas
+
     
-    
-def imprimir_matriz(matriz):
-    ancho = max(len(str(x)) for fila in matriz for x in fila)
+def main():
+    ruta_entrada = sys.argv[1]
+    try:
+        datos = procesar_texto(ruta_entrada)
+        if datos:
+            elegidos = elegir(datos)
+            
+            for i in range(len(elegidos)):
+                print("Ultima moneda para " if elegidos[i] else "Primera moneda para ", end="")
+                print("Sophia; " if not (i % 2) else "Mateo; ", end="")
 
-    for fila in matriz:
-        print(" ".join(f"{x:>{ancho}}" for x in fila))
+        else:
+            print("El archivo no contiene datos válidos")
+            sys.exit(1)
+    except Exception as e:
+        print("Error:", e)
+        sys.exit(1)
 
-
-monedas = [30, 5, 10, 85, 60]
-opt = elegir(monedas)
-imprimir_matriz(opt)
-
-sol = solucion(opt, monedas, [], 0, 4)
-print(sol)
+if __name__ == "__main__":
+    main()

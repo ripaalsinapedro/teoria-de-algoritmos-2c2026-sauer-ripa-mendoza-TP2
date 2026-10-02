@@ -11,6 +11,7 @@
 \usepackage{dsfont}
 \usepackage{listings}
 \usepackage{xcolor}
+\usepackage{ragged2e}
 \definecolor{codegreen}{rgb}{0,0.6,0}
 \definecolor{codegray}{rgb}{0.5,0.5,0.5}
 \definecolor{codepurple}{rgb}{0.58,0,0.82}
@@ -66,7 +67,9 @@
 
 \usepackage[style=authoryear-comp]{biblatex}
 
-
+\title{Título de tu Informe}
+\author{Tu Nombre}
+\date{\today}
 \begin{document}
 \maketitle
 
@@ -76,8 +79,10 @@
 \input{tex/consideraciones}
 \newpage
 \justifying{
-\hypertarget{res}{\section*{Ejemplo de Resolución}}
+\hypertarget{res}{\section*{Resolución}}
 \input{tex/algoritmos}
+\input{tex/complejidad}
+\input{tex/seguimiento}
 \input{tex/graficos}
 \input{tex/conclusiones}
 }

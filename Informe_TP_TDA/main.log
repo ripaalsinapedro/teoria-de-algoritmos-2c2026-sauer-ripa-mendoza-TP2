@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.10.1)  1 OCT 2026 17:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.10.1)  2 OCT 2026 20:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -331,9 +331,25 @@ Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
+) (C:\Users\ripaa\AppData\Local\Programs\MiKTeX\tex/latex/ragged2e\ragged2e.sty
+Package: ragged2e 2023/06/22 v3.6 ragged2e Package
+\CenteringLeftskip=\skip57
+\RaggedLeftLeftskip=\skip58
+\RaggedRightLeftskip=\skip59
+\CenteringRightskip=\skip60
+\RaggedLeftRightskip=\skip61
+\RaggedRightRightskip=\skip62
+\CenteringParfillskip=\skip63
+\RaggedLeftParfillskip=\skip64
+\RaggedRightParfillskip=\skip65
+\JustifyingParfillskip=\skip66
+\CenteringParindent=\skip67
+\RaggedLeftParindent=\skip68
+\RaggedRightParindent=\skip69
+\JustifyingParindent=\skip70
 ) (C:\Users\ripaa\AppData\Local\Programs\MiKTeX\tex/latex/enumitem\enumitem.sty
 Package: enumitem 2025/02/06 v3.11 Customized lists
-\labelindent=\skip57
+\labelindent=\skip71
 \enit@outerparindent=\dimen170
 \enit@toks=\toks28
 \enit@inbox=\box59
@@ -353,8 +369,8 @@ Package: multicol 2025/10/21 v2.0b multicolumn formatting (FMi)
 \page@free=\dimen173
 \premulticols=\dimen174
 \postmulticols=\dimen175
-\multicolsep=\skip58
-\multicolbaselineskip=\skip59
+\multicolsep=\skip72
+\multicolbaselineskip=\skip73
 \partial@page=\box61
 \last@line=\box62
 \mc@boxedresult=\box63
@@ -456,20 +472,20 @@ Package: calc 2025/03/01 v4.3b Infix arithmetic (KKT,FJ)
 \calc@Bcount=\count352
 \calc@Adimen=\dimen180
 \calc@Bdimen=\dimen181
-\calc@Askip=\skip60
-\calc@Bskip=\skip61
+\calc@Askip=\skip74
+\calc@Bskip=\skip75
 LaTeX Info: Redefining \setlength on input line 86.
 LaTeX Info: Redefining \addtolength on input line 87.
 \calc@Ccount=\count353
-\calc@Cskip=\skip62
+\calc@Cskip=\skip76
 )
-\thesrwidth=\skip63
-\thesrheight=\skip64
-\srblobheight=\skip65
-\srblobdepth=\skip66
-\mnxsrwidth=\skip67
-\LMex=\skip68
-\LMpt=\skip69
+\thesrwidth=\skip77
+\thesrheight=\skip78
+\srblobheight=\skip79
+\srblobdepth=\skip80
+\mnxsrwidth=\skip81
+\LMex=\skip82
+\LMpt=\skip83
 ) (C:\Users\ripaa\AppData\Local\Programs\MiKTeX\tex/latex/stackengine\stackengine.sty
 Package: stackengine 2021/07/22 v4.11\ Stacking text and objects in convenient ways
  (C:\Users\ripaa\AppData\Local\Programs\MiKTeX\tex/latex/listofitems\listofitems.sty (C:\Users\ripaa\AppData\Local\Programs\MiKTeX\tex/generic/listofitems\listofitems.tex
@@ -479,10 +495,10 @@ Package: stackengine 2021/07/22 v4.11\ Stacking text and objects in convenient w
 Package: listofitems 2024/03/09 v1.65 Grab items in lists using user-specified sep char (CT)
 )
 \c@@stackindex=\count356
-\@boxshift=\skip70
-\stack@tmplength=\skip71
-\temp@stkl=\skip72
-\@stackedboxwidth=\skip73
+\@boxshift=\skip84
+\stack@tmplength=\skip85
+\temp@stkl=\skip86
+\@stackedboxwidth=\skip87
 \@addedbox=\box106
 \@anchorbox=\box107
 \@insetbox=\box108
@@ -497,7 +513,7 @@ Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
 )
 \g_MT_multlinerow_int=\count358
 \l_MT_multwidth_dim=\dimen182
-\origjot=\skip74
+\origjot=\skip88
 \l_MT_shortvdotswithinadjustabove_dim=\dimen183
 \l_MT_shortvdotswithinadjustbelow_dim=\dimen184
 \l_MT_above_intertext_sep=\dimen185
@@ -559,14 +575,14 @@ Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
 \blx@sectionciteorderinternal@0=\count400
 \blx@entrysetcounter=\count401
 \blx@biblioinstance=\count402
-\labelnumberwidth=\skip75
-\labelalphawidth=\skip76
-\biblabelsep=\skip77
-\bibitemsep=\skip78
-\bibnamesep=\skip79
-\bibinitsep=\skip80
-\bibparsep=\skip81
-\bibhang=\skip82
+\labelnumberwidth=\skip89
+\labelalphawidth=\skip90
+\biblabelsep=\skip91
+\bibitemsep=\skip92
+\bibnamesep=\skip93
+\bibinitsep=\skip94
+\bibparsep=\skip95
+\bibhang=\skip96
 \blx@bcfin=\read3
 \blx@bcfout=\write3
 \blx@langwohyphens=\language80
@@ -650,20 +666,20 @@ Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
 \c@savedoriglanguage=\count471
 \c@pageref=\count472
 \c@savedpageref=\count473
-\shorthandwidth=\skip83
-\shortjournalwidth=\skip84
-\shortserieswidth=\skip85
-\shorttitlewidth=\skip86
-\shortauthorwidth=\skip87
-\shorteditorwidth=\skip88
-\locallabelnumberwidth=\skip89
-\locallabelalphawidth=\skip90
-\localshorthandwidth=\skip91
-\localshortjournalwidth=\skip92
-\localshortserieswidth=\skip93
-\localshorttitlewidth=\skip94
-\localshortauthorwidth=\skip95
-\localshorteditorwidth=\skip96
+\shorthandwidth=\skip97
+\shortjournalwidth=\skip98
+\shortserieswidth=\skip99
+\shorttitlewidth=\skip100
+\shortauthorwidth=\skip101
+\shorteditorwidth=\skip102
+\locallabelnumberwidth=\skip103
+\locallabelalphawidth=\skip104
+\localshorthandwidth=\skip105
+\localshortjournalwidth=\skip106
+\localshortserieswidth=\skip107
+\localshorttitlewidth=\skip108
+\localshortauthorwidth=\skip109
+\localshorteditorwidth=\skip110
 Package biblatex Info: Trying to load compatibility code...
 Package biblatex Info: ... file 'blx-compat.def' found.
  (C:\Users\ripaa\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-compat.def
@@ -745,31 +761,34 @@ Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'spanish'.
- (main.aux)
+ (main.aux
+LaTeX Info: Redefining \. on input line 12.
+LaTeX Info: Redefining \% on input line 12.
+Package babel Info: 'spanish' activates 'spanish' shorthands.
+(babel)             Reported on input line 12.
+)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Info: Redefining \. on input line 70.
-LaTeX Info: Redefining \% on input line 70.
-Package babel Info: 'spanish' activates 'spanish' shorthands.
-(babel)             Reported on input line 70.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Info: Redefining \. on input line 73.
+LaTeX Info: Redefining \% on input line 73.
  (C:\Users\ripaa\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count486
@@ -789,7 +808,8 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (C:\Users\ripaa\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-Package hyperref Info: Link coloring OFF on input line 70.
+Package hyperref Info: Link coloring OFF on input line 73.
+ (main.out) (main.out)
 \@outlinefile=\write4
 \openout4 = `main.out'.
 
@@ -807,62 +827,36 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
  (main.bbl)
-Package biblatex Info: Reference section=0 on input line 70.
-Package biblatex Info: Reference segment=0 on input line 70.
-
-
-e:/Docs/Facu/TDA/TP2/Informe_TP_TDA/main.tex:72: LaTeX Error: No \title given.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.72 
-     
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-LaTeX Font Info:    Trying to load font information for U+msa on input line 72.
-(C:\Users\ripaa\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+Package biblatex Info: Reference section=0 on input line 73.
+Package biblatex Info: Reference segment=0 on input line 73.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 75.
+ (C:\Users\ripaa\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 72.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 75.
  (C:\Users\ripaa\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
+) [1
 
-LaTeX Warning: No \author given.
-
-e:/Docs/Facu/TDA/TP2/Informe_TP_TDA/main.tex:73: Undefined control sequence.
-l.73 \justifying
-                {}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-[1
-
-{C:/Users/ripaa/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] (tex/consideraciones.tex) [2]
-e:/Docs/Facu/TDA/TP2/Informe_TP_TDA/main.tex:78: Undefined control sequence.
-l.78 \justifying
-                {
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-(tex/algoritmos.tex (C:\Users\ripaa\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
+{C:/Users/ripaa/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] (tex/consideraciones.tex) [2] (tex/algoritmos.tex (C:\Users\ripaa\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
 File: lstlang1.sty 2025/11/14 1.11b listings language file
-) [3]) (tex/graficos.tex [4] [5]
-<img/grafico_analisis.png, id=103, 474.27188pt x 356.83313pt>
+) [3] [4]
+Overfull \hbox (14.18608pt too wide) detected at line 100
+[][] \OT1/cmr/m/n/10 + [][] = []
+ []
+
+
+Overfull \hbox (17.2pt too wide) detected at line 108
+[][] \OT1/cmr/m/n/10 + [][] = []
+ []
+
+[5]) (tex/complejidad.tex [6]) (tex/seguimiento.tex) (tex/graficos.tex [7] [8]
+<img/grafico_analisis.png, id=216, 474.27188pt x 356.83313pt>
 File: img/grafico_analisis.png Graphic file (type png)
 <use img/grafico_analisis.png>
 Package pdftex.def Info: img/grafico_analisis.png  used on input line 99.
 (pdftex.def)             Requested size: 345.0pt x 259.58217pt.
- [6]) (tex/conclusiones.tex) [7 <./img/grafico_analisis.png>] (main.aux
+ [9]) (tex/conclusiones.tex) [10 <./img/grafico_analisis.png>] (main.aux
 LaTeX Info: Redefining \sptext on input line 12.
 LaTeX Info: Redefining \. on input line 12.
 LaTeX Info: Redefining \% on input line 12.
@@ -871,39 +865,24 @@ LaTeX Info: Redefining \% on input line 12.
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
  ***********
-
-
-LaTeX Warning: There were undefined references.
-
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  0B6CB82CDBAC2F6FA7A7F7031D193E2E;1916.
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                main
-(biblatex)                and rerun LaTeX afterwards.
-
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 3F6B62475F7382E12BFA27953503651A;3145.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 23735 strings out of 467871
- 401803 string characters out of 5418376
- 1477764 words of memory out of 5000000
- 52201 multiletter control sequences out of 15000+600000
+ 23926 strings out of 467871
+ 405436 string characters out of 5418376
+ 1505516 words of memory out of 5000000
+ 52329 multiletter control sequences out of 15000+600000
  636601 words of font info for 75 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,6n,79p,729b,2187s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\ripaa\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/ripaa/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/ripaa/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/ripaa/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/ripaa/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/ripaa/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/ripaa/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/ripaa/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/ripaa/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/ripaa/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/ripaa/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/ripaa/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on main.pdf (7 pages, 192090 bytes).
+ 75i,9n,79p,729b,2300s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\ripaa\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/ripaa/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/ripaa/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/ripaa/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/ripaa/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/ripaa/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/ripaa/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/ripaa/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/ripaa/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/ripaa/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/ripaa/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/ripaa/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/ripaa/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/ripaa/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/ripaa/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
+Output written on main.pdf (10 pages, 244225 bytes).
 PDF statistics:
- 217 PDF objects out of 1000 (max. 8388607)
- 104 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 355 PDF objects out of 1000 (max. 8388607)
+ 153 named destinations out of 1000 (max. 500000)
+ 150 words of extra memory for PDF output out of 10000 (max. 10000000)
 

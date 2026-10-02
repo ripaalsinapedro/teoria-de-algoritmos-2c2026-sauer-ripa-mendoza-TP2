@@ -1,11 +1,11 @@
 # Fdb version 4
-["biber main"] 0 "main.bcf" "main.bbl" "main" 0 -1
-  "main.bcf" 1790887886 108104 5b9b94958478dd86d2a3c00b3c49c899 "pdflatex"
+["biber main"] 0 "main.bcf" "main.bbl" "main" 1790982798.07005 -1
+  "main.bcf" 1790982797 108104 5b9b94958478dd86d2a3c00b3c49c899 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1790887884.49065 "e:/Docs/Facu/TDA/TP2/Informe_TP_TDA/main.tex" "main.pdf" "main" 1790887886.9724 2
+["pdflatex"] 1790982795.66103 "e:/Docs/Facu/TDA/TP2/Informe_TP_TDA/main.tex" "main.pdf" "main" 1790982798.07112 0
   "C:/Users/ripaa/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1790885952 81068 299f700eb05b1217173e62b88b513bd0 ""
   "C:/Users/ripaa/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk" 1790886855 11548 9aed7a416cadbecb004437f0bd38fe98 ""
   "C:/Users/ripaa/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1790883173 13333487 dcbd3f22f5716e8777943396e11d72b2 ""
@@ -38,12 +38,15 @@
   "C:/Users/ripaa/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1247596666 32080 340ef9bf63678554ee606688e7b5339d ""
   "C:/Users/ripaa/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb" 1247596667 30251 6afa5cb1d0204815a708a080681d4674 ""
   "C:/Users/ripaa/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1247596667 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
+  "C:/Users/ripaa/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb" 1247596667 36281 c355509802a035cadc5f15869451dcee ""
   "C:/Users/ripaa/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1247596667 35752 024fb6c41858982481f6968b5fc26508 ""
   "C:/Users/ripaa/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1247596667 32722 d7379af29a190c3f453aba36302ff5a9 ""
+  "C:/Users/ripaa/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb" 1247596666 32362 bc3f3eec7ab7d65fe700963d4017d32c ""
   "C:/Users/ripaa/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb" 1247596667 31809 8670ca339bf94e56da1fc21c80635e2a ""
   "C:/Users/ripaa/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb" 1247596667 32762 7fee39e011c23b3589931effd97b9702 ""
   "C:/Users/ripaa/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1247596667 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "C:/Users/ripaa/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb" 1247596667 37944 359e864bd06cde3b1cf57bb20757fb06 ""
+  "C:/Users/ripaa/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb" 1247596667 31099 342ef5a582aacbd3346f3cf4579679fa ""
   "C:/Users/ripaa/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt8.pfb" 1247596666 24287 6b803fa9eb1ddff9112e00519b09dd9e ""
   "C:/Users/ripaa/AppData/Local/Programs/MiKTeX/tex/context/base/mkii/supp-pdf.mkii" 1580390158 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "C:/Users/ripaa/AppData/Local/Programs/MiKTeX/tex/generic/babel/babel.sty" 1765441417 146654 eaac99efd6386094bb8a3980e34ec87b ""
@@ -139,6 +142,7 @@
   "C:/Users/ripaa/AppData/Local/Programs/MiKTeX/tex/latex/mathtools/mathtools.sty" 1728300125 62711 3b0ed1d68b598a75677c10d16646d5e5 ""
   "C:/Users/ripaa/AppData/Local/Programs/MiKTeX/tex/latex/mathtools/mhsetup.sty" 1728300125 5582 a43dedf8e5ec418356f1e9dfe5d29fc3 ""
   "C:/Users/ripaa/AppData/Local/Programs/MiKTeX/tex/latex/multirow/multirow.sty" 1731767677 6696 886c9f3087d0b973ed2c19aa79cb3023 ""
+  "C:/Users/ripaa/AppData/Local/Programs/MiKTeX/tex/latex/ragged2e/ragged2e.sty" 1687525147 10085 3dececaeed388e31285c366e124c0c4e ""
   "C:/Users/ripaa/AppData/Local/Programs/MiKTeX/tex/latex/refcount/refcount.sty" 1576433952 9878 9e94e8fa600d95f9c7731bb21dfb67a4 ""
   "C:/Users/ripaa/AppData/Local/Programs/MiKTeX/tex/latex/rerunfilecheck/rerunfilecheck.sty" 1751104012 9684 a33a14b82ce60d6e77cb9be689d79ee6 ""
   "C:/Users/ripaa/AppData/Local/Programs/MiKTeX/tex/latex/scalerel/scalerel.sty" 1482995416 7825 43f8c26a0a3916d218f4f48c29aa92e4 ""
@@ -148,16 +152,19 @@
   "C:/Users/ripaa/AppData/Local/Programs/MiKTeX/tex/latex/tools/multicol.sty" 1761901070 33142 efe8f4750fc02524935e7423b4bdef69 ""
   "C:/Users/ripaa/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/ripaa/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
-  "e:/Docs/Facu/TDA/TP2/Informe_TP_TDA/main.tex" 1790885944 2457 9ebc8bdca6f192604d4663f682f20560 ""
+  "e:/Docs/Facu/TDA/TP2/Informe_TP_TDA/main.tex" 1790982520 2578 62f84308d6a2a1194619ec0a56c3ea73 ""
   "img/grafico_analisis.png" 1790805247 36661 e16e86406ed74b82d388a8237e643a64 ""
-  "main.aux" 1790887886 2062 739dca088774aced3f08d09ecabb2ab3 "pdflatex"
+  "main.aux" 1790982797 2764 09027c54a60d19f9b2038a5b9542dffe "pdflatex"
   "main.bbl" 1790886561 0 d41d8cd98f00b204e9800998ecf8427e "biber main"
-  "main.out" 1790887886 1916 0b6cb82cdbac2f6fa7a7f7031d193e2e "pdflatex"
-  "main.tex" 1790885944 2457 9ebc8bdca6f192604d4663f682f20560 ""
-  "tex/algoritmos.tex" 1790884352 4212 cbf92f79780dcf316c65989d07142b16 ""
+  "main.out" 1790982797 3145 3f6b62475f7382e12bfa27953503651a "pdflatex"
+  "main.run.xml" 1790982797 2274 3c9efbcb7467da793e6933a55675e6bc "pdflatex"
+  "main.tex" 1790982520 2578 62f84308d6a2a1194619ec0a56c3ea73 ""
+  "tex/algoritmos.tex" 1790980527 7821 466fa7bdbb32d59dc50d9cf09af67459 ""
+  "tex/complejidad.tex" 1790982443 1821 f8f525a28c6648e0915dd47c0e5baf4b ""
   "tex/conclusiones.tex" 1790812352 79 d15a43385b6fc79a9e9db159dabbae14 ""
   "tex/consideraciones.tex" 1790812352 2165 63f8a559815353121c35ad28dcd355b8 ""
   "tex/graficos.tex" 1790887878 3808 fdda75932bb783331ec8602292eb2cf2 ""
+  "tex/seguimiento.tex" 1790982794 37 af8bd5cb164eff39b6bf6c02f7b7548e ""
   (generated)
   "main.aux"
   "main.bcf"

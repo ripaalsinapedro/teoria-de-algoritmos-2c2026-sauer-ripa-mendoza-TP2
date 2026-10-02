@@ -1,0 +1,43 @@
+\section{Complejidad}
+
+La complejidad del algoritmo se puede ver como la complejidad de las siguentes partes, tomando siempre $N$, como la cantidad de monedas.
+
+\subsection{Complejidad del algoritmo para obtener la matriz optima}
+
+El algoritmo para obtener la matriz optima, tiene la siguente complejidad.
+
+\begin{enumerate}
+    \item Crear la matriz \texttt{opt} de $N \times N$ $\mathcal{O}(N^2)$.
+    \item Plantear los casos base de una moneda $\mathcal{O}(N)$.
+    \item Plantear los casos base de dos monedas $\mathcal{O}(N)$.
+    \item Completar la matriz optima $\mathcal{O}(N^2)$, recorro la matriz de $N \times N$ y hago un trabajo de $\mathcal{O}(1)$ por iteracion.
+\end{enumerate}
+
+Por lo que la complejidad nos queda.
+
+\[
+T(N) = \mathcal{O}(N^2 + N + N + N^2) = \mathcal{O}(N^2)
+\]
+
+\subsection{El algoritmo para reconstruir la solucion}
+
+El algoritmo para reconstruir la solucion tiene la siguente complejidad.
+
+\begin{enumerate}
+    \item Trabajo por llamada recursiva. En cada llamda realiza operaciones como comparaciones, accesos a listas y operaciones arimeticas, todas con una complejidad de $\mathcal{O}(1)$.
+    \item Numero de llamados recursivos. En cada llamda realiza un llamado recursivo, que achica o la variable $i$, o la $j$, en una o dos unidades. Como el rango inicial es de $N$, a lo sumo tendremos $N$ llamadas recursivas.
+\end{enumerate}
+
+Por lo tanto la complejidad nos queda.
+
+\[
+T(N) = \mathcal{O}(N)
+\]
+
+\subsection{Complejidad total}
+
+Finalmente la complejidad total del algoritmo, desde calcular la matriz de resultados, hasta calcular la secuencia que se debe seguir para llegar al maximo encotnrado, es la suma de ambas partes del algoritmo. Por lo que la complejidad total queda.
+
+\[
+T(N) = \mathcal{O}(N^2 + N) = \mathcal{O}(N^2)
+\]

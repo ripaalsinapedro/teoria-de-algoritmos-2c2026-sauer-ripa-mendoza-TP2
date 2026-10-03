@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber main"] 0 "main.bcf" "main.bbl" "main" 1790982798.07005 -1
-  "main.bcf" 1790982797 108104 5b9b94958478dd86d2a3c00b3c49c899 "pdflatex"
+["biber main"] 0 "main.bcf" "main.bbl" "main" 1790987095.53508 -1
+  "main.bcf" 1790987095 108104 5b9b94958478dd86d2a3c00b3c49c899 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1790982795.66103 "e:/Docs/Facu/TDA/TP2/Informe_TP_TDA/main.tex" "main.pdf" "main" 1790982798.07112 0
-  "C:/Users/ripaa/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1790885952 81068 299f700eb05b1217173e62b88b513bd0 ""
+["pdflatex"] 1790987093.16291 "e:/Docs/Facu/TDA/TP2/Informe_TP_TDA/main.tex" "main.pdf" "main" 1790987095.53616 0
+  "C:/Users/ripaa/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1790985796 81068 299f700eb05b1217173e62b88b513bd0 ""
   "C:/Users/ripaa/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk" 1790886855 11548 9aed7a416cadbecb004437f0bd38fe98 ""
   "C:/Users/ripaa/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1790883173 13333487 dcbd3f22f5716e8777943396e11d72b2 ""
   "C:/Users/ripaa/AppData/Local/Programs/MiKTeX/fonts/tfm/jknappen/ec/tcrm1000.tfm" 993062508 1436 c7f957a372ef2fbe93c0982f96625e12 ""
@@ -92,6 +92,7 @@
   "C:/Users/ripaa/AppData/Local/Programs/MiKTeX/tex/latex/biblatex/blx-dm.def" 1752408733 32761 18d14e3b502c120f79b2184de4e21d14 ""
   "C:/Users/ripaa/AppData/Local/Programs/MiKTeX/tex/latex/biblatex/cbx/authoryear-comp.cbx" 1752408733 9050 4f4decb1043fd6b4d2bf8b0986e50958 ""
   "C:/Users/ripaa/AppData/Local/Programs/MiKTeX/tex/latex/biblatex/lbx/spanish.lbx" 1752408733 47926 a9a2e5a53d52e80cf54a5601aa76edd2 ""
+  "C:/Users/ripaa/AppData/Local/Programs/MiKTeX/tex/latex/booktabs/booktabs.sty" 1579093635 6253 f1cb470c9199e7110a27851508ed7a5c ""
   "C:/Users/ripaa/AppData/Local/Programs/MiKTeX/tex/latex/csquotes/csquotes.cfg" 1779200918 7068 06f8d141725d114847527a66439066b6 ""
   "C:/Users/ripaa/AppData/Local/Programs/MiKTeX/tex/latex/csquotes/csquotes.def" 1779200918 22334 1233affb950683ab8014b8f34ef92279 ""
   "C:/Users/ripaa/AppData/Local/Programs/MiKTeX/tex/latex/csquotes/csquotes.sty" 1779200918 62807 72abe6c8e8c35eabaacb81f69e6f1983 ""
@@ -152,19 +153,19 @@
   "C:/Users/ripaa/AppData/Local/Programs/MiKTeX/tex/latex/tools/multicol.sty" 1761901070 33142 efe8f4750fc02524935e7423b4bdef69 ""
   "C:/Users/ripaa/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/ripaa/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
-  "e:/Docs/Facu/TDA/TP2/Informe_TP_TDA/main.tex" 1790982520 2578 62f84308d6a2a1194619ec0a56c3ea73 ""
+  "e:/Docs/Facu/TDA/TP2/Informe_TP_TDA/main.tex" 1790985788 2600 b16e4447d361117f3567c560f96a6503 ""
   "img/grafico_analisis.png" 1790805247 36661 e16e86406ed74b82d388a8237e643a64 ""
-  "main.aux" 1790982797 2764 09027c54a60d19f9b2038a5b9542dffe "pdflatex"
+  "main.aux" 1790987095 2884 952cb5fb42eda8258621d7441a0cc480 "pdflatex"
   "main.bbl" 1790886561 0 d41d8cd98f00b204e9800998ecf8427e "biber main"
-  "main.out" 1790982797 3145 3f6b62475f7382e12bfa27953503651a "pdflatex"
-  "main.run.xml" 1790982797 2274 3c9efbcb7467da793e6933a55675e6bc "pdflatex"
-  "main.tex" 1790982520 2578 62f84308d6a2a1194619ec0a56c3ea73 ""
+  "main.out" 1790987095 3251 58071bb88079799bcf722f4deadb223e "pdflatex"
+  "main.run.xml" 1790987095 2274 3c9efbcb7467da793e6933a55675e6bc "pdflatex"
+  "main.tex" 1790985788 2600 b16e4447d361117f3567c560f96a6503 ""
   "tex/algoritmos.tex" 1790980527 7821 466fa7bdbb32d59dc50d9cf09af67459 ""
   "tex/complejidad.tex" 1790982443 1821 f8f525a28c6648e0915dd47c0e5baf4b ""
   "tex/conclusiones.tex" 1790812352 79 d15a43385b6fc79a9e9db159dabbae14 ""
   "tex/consideraciones.tex" 1790812352 2165 63f8a559815353121c35ad28dcd355b8 ""
   "tex/graficos.tex" 1790887878 3808 fdda75932bb783331ec8602292eb2cf2 ""
-  "tex/seguimiento.tex" 1790982794 37 af8bd5cb164eff39b6bf6c02f7b7548e ""
+  "tex/seguimiento.tex" 1790987092 4068 abd55c09b7a0be3ad7822ee13a5a4406 ""
   (generated)
   "main.aux"
   "main.bcf"

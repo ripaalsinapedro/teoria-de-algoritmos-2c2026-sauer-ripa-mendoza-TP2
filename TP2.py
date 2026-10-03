@@ -68,12 +68,21 @@ def main():
     try:
         datos = procesar_texto(ruta_entrada)
         if datos:
-            maxima_ganancia, elegidos = elegir(datos)
+            ganancia_Sophia, elegidos = elegir(datos)
             
-            print("Gnancia de Sophia: ", maxima_ganancia)
-            for i in range(len(elegidos)):
-                print("Ultima moneda para " if elegidos[i] else "Primera moneda para ", end="")
-                print("Sophia; " if not (i % 2) else "Mateo; ", end="")
+            ganancia_max = sum(datos)
+            ganancia_Mateo = ganancia_max - ganancia_Sophia
+            
+            if ganancia_Sophia > ganancia_Mateo:
+                for i in range(len(elegidos)):
+                    print("Ultima moneda para " if elegidos[i] else "Primera moneda para ", end="")
+                    print("Sophia; " if not (i % 2) else "Mateo; ", end="")
+                
+                print("")
+                print("Gnancia de Sophia: ", ganancia_Sophia)
+                print("Ganancia de Mateo: ", ganancia_Mateo)
+            else:
+                print("El algorimto fallo gano Mateo, o empataron")
         else:
             print("El archivo no contiene datos válidos")
             sys.exit(1)

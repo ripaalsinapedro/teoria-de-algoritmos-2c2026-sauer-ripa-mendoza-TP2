@@ -52,7 +52,7 @@ Por otro lado, con nuestro algoritmo, realizamos los siguentes pasos.
     \end{tabular}
     \end{table}
 
-    \item Terminamos de completar la matriz, segun nos indica el algoritmo
+    \item Terminamos de completar la matriz segun nos indica el algoritmo
     \begin{table}[h!]
     \centering
     \begin{tabular}{cccccc}
@@ -100,6 +100,110 @@ Vemos entonces que nuestra nueva ganancia maxima, encontrada en la esquina super
 
 \textbf{Resultado final del seguimiento:}
 \begin{itemize}
-    \item \textbf{Monedas elegidas por Sophia ($s$):} $[20, 85, 10]$.
-    \item \textbf{Monedas elegidas por Mateo:} $[30, 5]$.
+    \item \textbf{Monedas elegidas por Sophia ($s$):} $[20, 85, 10]$, con una ganancia acumulada de $115$.
+    \item \textbf{Monedas elegidas por Mateo:} $[30, 5]$, con una ganancia acumulada de $35$.
 \end{itemize}
+
+\subsection{Ejemplo 2}
+
+\subsubsection{10 Monedas}
+
+Tomemos el arreglo de monedas que se encuentra en el archivo 10.txt, tal que.
+
+\[
+M = [520, 781, 334, 568, 706, 362, 201, 482, 19, 145]
+\]
+
+Donde se nos indica que las ganancias de los hermanos deberia ser la siguente.
+
+\begin{itemize}
+    \item $\text{Ganancia Sophia}: 2338$
+    \item $\text{Ganancia Mateo}: 1780$
+\end{itemize}
+
+Mediante nuestro algoritmo, realizamos los siguentes pasos para hallar nuestra matriz optima, con $N = 10$.
+
+\begin{enumerate}
+    \item Creamos la matriz optima de $N \times N$ 
+    \begin{table}[h!]
+    \centering
+    \begin{tabular}{ccccccccccc}
+    \toprule
+    $i \setminus j$ & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 \\
+    \midrule
+    1  & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- \\
+    2  & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- \\
+    3  & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- \\
+    4  & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- \\
+    5  & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- \\
+    6  & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- \\
+    7  & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- \\
+    8  & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- \\
+    9  & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- \\
+    10 & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- \\
+    \bottomrule
+    \end{tabular}
+    \end{table}
+
+    \item Llenamos los casos base
+    \begin{table}[h!]
+    \centering
+    \begin{tabular}{ccccccccccc}
+    \toprule
+    $i \setminus j$ & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 \\
+    \midrule
+    1  & 520 & 781 & --- & --- & --- & --- & --- & --- & --- & --- \\
+    2  & --- & 781 & 781 & --- & --- & --- & --- & --- & --- & --- \\
+    3  & --- & --- & 334 & 568 & --- & --- & --- & --- & --- & --- \\
+    4  & --- & --- & --- & 568 & 706 & --- & --- & --- & --- & --- \\
+    5  & --- & --- & --- & --- & 706 & 706 & --- & --- & --- & --- \\
+    6  & --- & --- & --- & --- & --- & 362 & 362 & --- & --- & --- \\
+    7  & --- & --- & --- & --- & --- & --- & 201 & 482 & --- & --- \\
+    8  & --- & --- & --- & --- & --- & --- & --- & 482 & 482 & --- \\
+    9  & --- & --- & --- & --- & --- & --- & --- & --- &  19 & 145 \\
+    10 & --- & --- & --- & --- & --- & --- & --- & --- & --- & 145 \\
+    \bottomrule
+    \end{tabular}
+    \end{table}
+
+    \item Terminamos de completar la matriz segun nos indica el algoritmo
+    \begin{table}[h!]
+    \centering
+    \begin{tabular}{ccccccccccc}
+    \toprule
+    $i \setminus j$ & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 \\
+    \midrule
+   1  & 520 & 781 &  854 & 1349 & 1560 & 1711 & 2022 & 2193 & 2041 & 2338 \\
+   2  & --- & 781 &  781 & 1115 & 1349 & 1821 & 1711 & 2022 & 2193 & 2212 \\
+   3  & --- & --- &  334 &  568 & 1040 & 1040 & 1241 & 1412 & 1260 & 1667 \\
+   4  & --- & --- &  --- &  568 &  706 &  930 &  930 & 1389 & 1412 & 1431 \\
+   5  & --- & --- &  --- &  --- &  706 &  706 &  907 & 1068 &  926 & 1333 \\
+   6  & --- & --- &  --- &  --- &  --- &  362 &  362 &  683 &  844 &  863 \\
+   7  & --- & --- &  --- &  --- &  --- &  --- &  201 &  482 &  220 &  627 \\
+   8  & --- & --- &  --- &  --- &  --- &  --- &  --- &  482 &  482 &  501 \\
+   9  & --- & --- &  --- &  --- &  --- &  --- &  --- &  --- &   19 &  145 \\
+   10 & --- & --- &  --- &  --- &  --- &  --- &  --- &  --- &  --- &  145 \\
+    \bottomrule
+    \end{tabular}
+    \end{table}
+\end{enumerate}
+
+Podemos ver que efectivamente encontramos nuestro maximo valor acumulado en la esquina superior derecha de nuestra matriz, el valor $2338$, que coincide con el valor esperado. Luego si queremes encontrar el valor acumulada de Mateo, no basta con sumar los valores del arreglo original, dandos asi el valor total de las monedas, y luego restando la gnancia obtenida por Sophia.
+
+\[
+\text{Ganancia de Mateo} = \sum_{k=1}^{n} M[k] - \text{Ganancia de Sophia} = 4118 - 2338 = 1780
+\]
+
+Podemos ver que nuestro algoritmo encontro la solucion optima ya que la ganancia de Sophia es mayor a la de Mateo, $4118 > 1780$.
+
+\subsubsection{Reconstruccion de la solucion}
+
+Una vez tenemos la matriz $opt$, nos queda recontruir la solucion como hizimos en el ejemplo anterior, para encontrar la secuencia de monedas que debe elegir Sophia en cada turno. Vemos que nos queda que Sophia debe elegir las siguentes Monedas.
+
+\[
+\text{Monedas Sophia} = M = [145, 781, 568, 362, 482]
+\]
+
+\subsection{Ejemplo 3}
+
+\subsubsection{Caso de empate con el algoritmo greedy}

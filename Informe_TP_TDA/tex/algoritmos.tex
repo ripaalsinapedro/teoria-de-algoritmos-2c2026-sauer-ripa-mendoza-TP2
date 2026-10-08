@@ -4,7 +4,7 @@ En este trabajo de ejemplo realizaremos el análisis teórico y empírico de dif
 
 \subsection{Algoritmo para encontrar el optimo}
 
-El algoritmo plantea una matriz de $n * n$, siendo $n$ la cantidad de monedas, donde para cada coordenada $i$, $j$ de la matriz, encontramos una solucion para un problema de dimensiones $i$, $j$.
+El algoritmo plantea una matriz de $N \times N$, siendo $n$ la cantidad de monedas, donde para cada coordenada $i$, $j$ de la matriz, encontramos una solucion para un problema de dimensiones $i$, $j$.
 Luego se llena las diagonales, donde las corrdenads $i$ y $j$ son iguales, $i = j$, y la diagonal donde la coordenada $j$ es uno mas que la $i$, $i = j + 1$, con los valores de los dos casos base, siendo estos:
 \begin{itemize}
     \item tener una sola mondea, donde el optimo es la moneda en si.
@@ -115,7 +115,7 @@ Partiendo de la matriz optima, desarrollamos un algoritmo que brinde la secuenci
     \item Casos base.
     \begin{itemize}
         \item $i < j$ El rango de monedas es invalido, finalizo la recursion y devuelvo la solucion.
-        \item $i = j$ Solo queda una moneda por elejir, se agrega a la solucion y se devuelve el conjunto.
+        \item $i = j + 1$ Quedan solo dos monedas, por lo que Sophia elige la mayor
     \end{itemize}
 
     \item Evaluacion de alternativas (esta es la parte donde analizamos que sub problema conforma la solucion del problema actual y se simula la eleccion de monedas).
@@ -131,8 +131,8 @@ def solucion(opt, monedas, s, i, j):
 if i > j:
     return s
 
-if i == j:
-    s.append(i)
+if i == j + 1:
+    s.append(i if monedas[i] > monedas[j] else j)
     return s
 
 opt_i = opt[i + 2][j] if monedas[i + 1] > monedas[j] else opt[i + 1][j - 1]

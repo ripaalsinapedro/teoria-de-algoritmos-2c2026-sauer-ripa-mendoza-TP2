@@ -33,8 +33,8 @@ def solucion(opt, monedas, s, i, j):
     if i > j:
         return s
     
-    if i == j:
-        s.append(i)
+    if i == j + 1:
+        s.append(i if monedas[i] > monedas[j] else j)
         return s
     
     opt_i = opt[i + 2][j] if monedas[i + 1] > monedas[j] else opt[i + 1][j - 1]

@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber main"] 0 "main.bcf" "main.bbl" "main" 1790987095.53508 -1
-  "main.bcf" 1790987095 108104 5b9b94958478dd86d2a3c00b3c49c899 "pdflatex"
+["biber main"] 0 "main.bcf" "main.bbl" "main" 1791491573.76953 -1
+  "main.bcf" 1791491573 108104 5b9b94958478dd86d2a3c00b3c49c899 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1790987093.16291 "e:/Docs/Facu/TDA/TP2/Informe_TP_TDA/main.tex" "main.pdf" "main" 1790987095.53616 0
-  "C:/Users/ripaa/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1790985796 81068 299f700eb05b1217173e62b88b513bd0 ""
+["pdflatex"] 1791491571.61966 "e:/Docs/Facu/TDA/TP2/Informe_TP_TDA/main.tex" "main.pdf" "main" 1791491573.77062 0
+  "C:/Users/ripaa/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1791210151 81068 299f700eb05b1217173e62b88b513bd0 ""
   "C:/Users/ripaa/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk" 1790886855 11548 9aed7a416cadbecb004437f0bd38fe98 ""
   "C:/Users/ripaa/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1790883173 13333487 dcbd3f22f5716e8777943396e11d72b2 ""
   "C:/Users/ripaa/AppData/Local/Programs/MiKTeX/fonts/tfm/jknappen/ec/tcrm1000.tfm" 993062508 1436 c7f957a372ef2fbe93c0982f96625e12 ""
@@ -153,19 +153,20 @@
   "C:/Users/ripaa/AppData/Local/Programs/MiKTeX/tex/latex/tools/multicol.sty" 1761901070 33142 efe8f4750fc02524935e7423b4bdef69 ""
   "C:/Users/ripaa/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/ripaa/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
-  "e:/Docs/Facu/TDA/TP2/Informe_TP_TDA/main.tex" 1790985788 2600 b16e4447d361117f3567c560f96a6503 ""
+  "e:/Docs/Facu/TDA/TP2/Informe_TP_TDA/main.tex" 1791485544 2588 eac5eb8e5d17e157830dd0c2e5de736a ""
   "img/grafico_analisis.png" 1790805247 36661 e16e86406ed74b82d388a8237e643a64 ""
-  "main.aux" 1790987095 2884 952cb5fb42eda8258621d7441a0cc480 "pdflatex"
-  "main.bbl" 1790886561 0 d41d8cd98f00b204e9800998ecf8427e "biber main"
-  "main.out" 1790987095 3251 58071bb88079799bcf722f4deadb223e "pdflatex"
-  "main.run.xml" 1790987095 2274 3c9efbcb7467da793e6933a55675e6bc "pdflatex"
-  "main.tex" 1790985788 2600 b16e4447d361117f3567c560f96a6503 ""
-  "tex/algoritmos.tex" 1790980527 7821 466fa7bdbb32d59dc50d9cf09af67459 ""
-  "tex/complejidad.tex" 1790982443 1821 f8f525a28c6648e0915dd47c0e5baf4b ""
-  "tex/conclusiones.tex" 1790812352 79 d15a43385b6fc79a9e9db159dabbae14 ""
-  "tex/consideraciones.tex" 1790812352 2165 63f8a559815353121c35ad28dcd355b8 ""
-  "tex/graficos.tex" 1790887878 3808 fdda75932bb783331ec8602292eb2cf2 ""
-  "tex/seguimiento.tex" 1790987092 4068 abd55c09b7a0be3ad7822ee13a5a4406 ""
+  "main.aux" 1791491573 3795 5086d4f4425608c6c5c55f1ca458363b "pdflatex"
+  "main.bbl" 1791485000 0 d41d8cd98f00b204e9800998ecf8427e "biber main"
+  "main.out" 1791491573 4355 6c6b987e4761bbb1f14179c404486e94 "pdflatex"
+  "main.run.xml" 1791491573 2274 3c9efbcb7467da793e6933a55675e6bc "pdflatex"
+  "main.tex" 1791485544 2588 eac5eb8e5d17e157830dd0c2e5de736a ""
+  "tex/algoritmos.tex" 1791491111 7841 16301c26c627faaa6ed8070f88d188fb ""
+  "tex/complejidad.tex" 1791486337 2265 6421dc985edf1a22d9d1548ec6945666 ""
+  "tex/conclusiones.tex" 1791485472 22 191e45bd541fc2e414e492f72225b680 ""
+  "tex/demostracion.tex" 1791485359 0 d41d8cd98f00b204e9800998ecf8427e ""
+  "tex/graficos.tex" 1790988548 3838 0606fb23c966840d33334af65437b7ff ""
+  "tex/introduccion.tex" 1791484767 2674 76c3142455645fb5fe52cff6e1d6d649 ""
+  "tex/seguimiento.tex" 1791491567 8681 effd34369d3479db4ef3031e55a7d113 ""
   (generated)
   "main.aux"
   "main.bcf"

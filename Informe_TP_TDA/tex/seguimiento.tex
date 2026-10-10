@@ -1,6 +1,6 @@
 \section{Seguimiento de ejemplos}
 
-\subsection{Ejemplo 1}
+\subsection{Ejemplo 1 - Caso donde el greedy no es optimo}
 
 Tomemos el arreglo de monedas.
 
@@ -8,11 +8,11 @@ Tomemos el arreglo de monedas.
 M = [20, 5, 10, 85, 30]
 \]
 
-El algoritmo \textit{greedy} del TP1 nos hubiera dado el siguente resultado, tomando la mayor entre las monedas disponibles.
+Si Sophia hubiera seguido con su estrategia \textit{greedy} del TP1, tomando la mayor entre las monedas disponibles para si misma, pero ahora dandole la posibidad a Mateo de elegir sus propias monedas.
 
 \begin{itemize}
-    \item \textbf{Monedas de Sophia:} $[30, 20, 10] \implies \text{Ganancia} = 30 + 20 + 10 = 60$
-    \item \textbf{Monedas de Mateo:} $[85, 5] \implies \text{Ganancia} = 85 + 5 = 90$
+    \item \textbf{Monedas de Sophia:} $[30, 20, 5] \implies \text{Ganancia} = 30 + 20 + 5 = 55$
+    \item \textbf{Monedas de Mateo:} $[85, 10] \implies \text{Ganancia} = 85 + 10 = 95$
 \end{itemize}
 
 Si comparamos las ganancias obtenidas ($60$ vs. $90$), se observa claramente que el enfoque \textit{greedy} no es optimo, ya que la ganancia de Mateo resulta ser mayor a la de Sophia.
@@ -53,7 +53,7 @@ Por otro lado, con nuestro algoritmo, realizamos los siguentes pasos.
     \end{table}
 
     \item Terminamos de completar la matriz segun nos indica el algoritmo
-    \begin{table}[h!]
+    \begin{table}[H]
     \centering
     \begin{tabular}{cccccc}
     \toprule
@@ -104,9 +104,7 @@ Vemos entonces que nuestra nueva ganancia maxima, encontrada en la esquina super
     \item \textbf{Monedas elegidas por Mateo:} $[30, 5]$, con una ganancia acumulada de $35$.
 \end{itemize}
 
-\subsection{Ejemplo 2}
-
-\subsubsection{10 Monedas}
+\subsection{Ejemplo 2 - 10 Monedas}
 
 Tomemos el arreglo de monedas que se encuentra en el archivo 10.txt, tal que.
 
@@ -167,7 +165,7 @@ Mediante nuestro algoritmo, realizamos los siguentes pasos para hallar nuestra m
     \end{table}
 
     \item Terminamos de completar la matriz segun nos indica el algoritmo
-    \begin{table}[h!]
+    \begin{table}[H]
     \centering
     \begin{tabular}{ccccccccccc}
     \toprule
@@ -188,7 +186,7 @@ Mediante nuestro algoritmo, realizamos los siguentes pasos para hallar nuestra m
     \end{table}
 \end{enumerate}
 
-Podemos ver que efectivamente encontramos nuestro maximo valor acumulado en la esquina superior derecha de nuestra matriz, el valor $2338$, que coincide con el valor esperado. Luego si queremes encontrar el valor acumulada de Mateo, no basta con sumar los valores del arreglo original, dandos asi el valor total de las monedas, y luego restando la gnancia obtenida por Sophia.
+Podemos ver que efectivamente encontramos nuestro maximo valor acumulado en la esquina superior derecha de nuestra matriz, el valor $2338$, que coincide con el valor esperado. Luego si queremes encontrar el valor acumulada de Mateo, no basta con sumar los valores del arreglo original, dandos asi el valor total de las monedas, y luego restando la ganancia obtenida por Sophia.
 
 \[
 \text{Ganancia de Mateo} = \sum_{k=1}^{n} M[k] - \text{Ganancia de Sophia} = 4118 - 2338 = 1780
@@ -196,14 +194,10 @@ Podemos ver que efectivamente encontramos nuestro maximo valor acumulado en la e
 
 Podemos ver que nuestro algoritmo encontro la solucion optima ya que la ganancia de Sophia es mayor a la de Mateo, $4118 > 1780$.
 
-\subsubsection{Reconstruccion de la solucion}
-
 Una vez tenemos la matriz $opt$, nos queda recontruir la solucion como hizimos en el ejemplo anterior, para encontrar la secuencia de monedas que debe elegir Sophia en cada turno. Vemos que nos queda que Sophia debe elegir las siguentes Monedas.
 
 \[
 \text{Monedas Sophia} = M = [145, 781, 568, 362, 482]
 \]
 
-\subsection{Ejemplo 3}
-
-\subsubsection{Caso de empate con el algoritmo greedy}
+\subsection{Ejemplo 3 - Caso de empate con el algoritmo greedy}

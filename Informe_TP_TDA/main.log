@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.10.1)  8 OCT 2026 17:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.10.1)  10 OCT 2026 13:29
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -869,20 +869,18 @@ Overfull \hbox (17.2pt too wide) detected at line 108
 [][] \OT1/cmr/m/n/10 + [][] = []
  []
 
-[5]) (tex/demostracion.tex) (tex/complejidad.tex [6]) (tex/seguimiento.tex [7] [8] [9]
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+Overfull \hbox (61.31157pt too wide) detected at line 124
+[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 i; j\OT1/cmr/m/n/10 ) = [] [] = [] []
+ []
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[10]) (tex/graficos.tex [11] [12] [13]
-<img/grafico_analisis.png, id=314, 474.27188pt x 356.83313pt>
+[5] [6]) (tex/demostracion.tex) (tex/complejidad.tex [7]) (tex/seguimiento.tex [8] [9] [10] [11]) (tex/graficos.tex [12] [13]
+<img/grafico_analisis.png, id=269, 474.27188pt x 356.83313pt>
 File: img/grafico_analisis.png Graphic file (type png)
 <use img/grafico_analisis.png>
 Package pdftex.def Info: img/grafico_analisis.png  used on input line 102.
 (pdftex.def)             Requested size: 345.0pt x 259.58217pt.
-) (tex/conclusiones.tex [14 <./img/grafico_analisis.png>]) [15] (main.aux
+ [14]) (tex/conclusiones.tex) [15 <./img/grafico_analisis.png>] (main.aux
 LaTeX Info: Redefining \sptext on input line 12.
 LaTeX Info: Redefining \. on input line 12.
 LaTeX Info: Redefining \% on input line 12.
@@ -892,23 +890,23 @@ LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 6C6B987E4761BBB1F14179C404486E94;4355.
+(rerunfilecheck)             Checksum: C060065204C774294AB5417120F24DF6;4387.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 24030 strings out of 467871
- 407075 string characters out of 5418376
- 1614376 words of memory out of 5000000
- 52399 multiletter control sequences out of 15000+600000
+ 24027 strings out of 467871
+ 406994 string characters out of 5418376
+ 1548370 words of memory out of 5000000
+ 52398 multiletter control sequences out of 15000+600000
  636601 words of font info for 75 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,10n,79p,873b,2306s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\ripaa\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/ripaa/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/ripaa/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/ripaa/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/ripaa/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/ripaa/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/ripaa/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/ripaa/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/ripaa/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/ripaa/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/ripaa/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/ripaa/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/ripaa/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/ripaa/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/ripaa/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on main.pdf (15 pages, 264146 bytes).
+Output written on main.pdf (15 pages, 264092 bytes).
 PDF statistics:
- 426 PDF objects out of 1000 (max. 8388607)
- 180 named destinations out of 1000 (max. 500000)
- 214 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 418 PDF objects out of 1000 (max. 8388607)
+ 178 named destinations out of 1000 (max. 500000)
+ 198 words of extra memory for PDF output out of 10000 (max. 10000000)
 

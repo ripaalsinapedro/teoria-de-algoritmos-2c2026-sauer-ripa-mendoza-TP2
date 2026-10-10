@@ -48,7 +48,7 @@ def elegir(monedas):
 \end{lstlisting}
 
 La forma de obtener nuesta matriz optima es la siguente.
-Se plantea que para cada problema de dimensiones $i$, $j$, donde queremos encontrar que moneda elegir para mazimizar la ganancia, la moneda en la posicion $i$ (la primera), y la moneda $j$ (la ultima), se puden analizar las siguentes opciones.
+Se plantea que para cada problema de dimensiones $i$, $j$, donde queremos encontrar que moneda elegir para maximizar la ganancia, la moneda en la posicion $i$ (la primera), y la moneda $j$ (la ultima), se puden analizar las siguentes opciones.
 
 \begin{enumerate}
     \item Sophia toma la primera moneda, la moneda $i$ y Mateo elige la mayor entre las monedas $i + 1$ y $j$.
@@ -106,6 +106,65 @@ donde:
 \text{monedas}[j] + \text{opt}(i, j - 2) & \text{sino}
 \end{cases}
 \]
+
+\subsection{Casos de empates}
+
+Al igual que el $TP1$, partimos de la base que el conjunto $M$, posee todas monedas diferentes, sin embargo, en cuyo caso aceptaramos monedas de valores similares, podemos ver que, en el turno de Sophia, de haber monedas de igual valor en ambos extremos tal que.
+
+\[
+\text{moneda}_i = \text{moneda}_j
+\]
+
+El desempate termina siendo el maximo entre las soluciones parciales del problema. Vemos que el optimo para el problema $(i, j)$ termina siendo.
+
+\[
+\text{opt}(i, j) = 
+\max \left( \text{moneda}_i + \text{opt}_i, \; \text{moneda}_j + \text{opt}_j \right) = 
+\max \left( \text{moneda}_i + \text{opt}_i, \; \text{moneda}_i + \text{opt}_j \right)
+\]
+
+\[
+\text{opt}(i, j) = \max \left(\text{opt}_i, \;\text{opt}_j \right)
+\]
+
+En caso de que tengamos, de nuevo, mondeas de igual valor en ambos extremos, pero en este caso, siendo el turno de Mateo, ahora lo que debemos analizar es como se reduce la dimension de nuestro problema. Anteriormente habiamos visto que.
+
+\[
+\text{opt}_i = 
+\begin{cases} 
+\text{monedas}[i] + \text{opt}(i + 2, j) & \text{si } \text{monedas}[i + 1] > \text{monedas}[j] \\[1ex]
+\text{monedas}[i] + \text{opt}(i + 1, j - 1) & \text{sino}
+\end{cases}
+\]
+
+\[
+\text{opt}_j = 
+\begin{cases} 
+\text{monedas}[j] + \text{opt}(i + 1, j - 1) & \text{si } \text{monedas}[i] > \text{monedas}[j - 1] \\[1ex]
+\text{monedas}[j] + \text{opt}(i, j - 2) & \text{sino}
+\end{cases}
+\]
+
+Si vemos, en ambos casos usamos un mayor esticto para definir los optimos $\text{opt}_i$, $\text{opt}_j$. Por lo que si planteamos lo siguente.
+
+\[
+\text{monedas}[i + 1] = \text{monedas}[j]
+\]
+
+\[
+\text{monedas}[i] = \text{monedas}[j - 1]
+\]
+
+Los optimos resultan.
+
+\[
+\text{opt}_i = \text{monedas}[i] + \text{opt}(i + 1, j - 1)
+\]
+
+\[
+\text{opt}_j = \text{monedas}[j] + \text{opt}(i, j - 2)
+\]
+
 
 \subsection{Algoritmo para obtener la reconstruccion de la solucion}
 

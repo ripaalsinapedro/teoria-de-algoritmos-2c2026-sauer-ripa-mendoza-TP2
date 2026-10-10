@@ -201,3 +201,29 @@ Una vez tenemos la matriz $opt$, nos queda recontruir la solucion como hizimos e
 \]
 
 \subsection{Ejemplo 3 - Caso de empate con el algoritmo greedy}
+
+Ahora si tomamos el conjunto de monedas $M$, tal que $M$ es simetrico y de tamaño $N$, tal que $N$ es par.
+
+\[
+M = [5, 10, 10, 5]
+\]
+
+El algoritmo \textit{greedy} del $TP1$, llegaba a la conclucion de que lo mejor que podia hacer Sophia era empatar, con una gancia de $15$.
+
+Si implementamos nuestro algoritmo, vemos que llegamos al mismo resultado. Esto se debe a que, aunque la estrategia de Sophia mejoro, en un sentido que encuentra soluciones donde el algoritmo \textit{greedy} no, tambien lo hizo la estrategia de Mateo. Es por eso que si ejecutamos el algoritmo, encontramos la siguente matriz optima.
+
+\begin{table}[H]
+\centering
+\begin{tabular}{ccccc}
+\toprule
+$i \setminus j$ & 1 & 2 & 3 & 4 \\
+\midrule
+1 &  5 & 10 & 15 & 15 \\
+2 & -- &  5 & 10 & 15 \\
+3 & -- & -- & 10 & 10 \\
+4 & -- & -- & -- &  5 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Donde vemos nuevamente que la maxima ganancia que puede obtener Sophia es de $15$, que sigue siendo igual a la de Mateo.

@@ -104,18 +104,16 @@
 \\[1cm]
 	\textsc{\Large Teoría de Algoritmos}\\           % Materia
 	\textsc{\small (75.29) Curso Buchwald - Genender}\\[0.4cm]    % Subtítulo materia
-	{ \huge \bfseries Trabajo Práctico 0 \\ Lineamientos sobre informes}\\[0.3cm]      % Título
+	{ \huge \bfseries Trabajo Práctico 2 \\ Programación Dinámica For The Win}\\[0.3cm]      % Título
 	\andreasline \\[0.2cm]
 	{\large \today  \\[0.4cm]}                          % Fecha
-	\begin{minipage}{0.4\textwidth}
-		\begin{flushleft}
-            \large{Alan Turing \\ 101010}                   % Integrante 1
-		\end{flushleft}
-	\end{minipage}
-	\begin{minipage}{0.4\textwidth}
-		\begin{flushright}
-            \large{Barbara Liskov \\ 111111}                % Integrante 2
-		\end{flushright}
-	\end{minipage}
- \end{center}
+    \begin{tabular}{ll}
+        \large{Carlos Franco Mendoza Coronado} & \large{111758} \\
+        \\
+        \large{Agustin Sauer } & \large{112712} \\
+        \\
+        \large{Pedro Ripa Alsina} & \large{112562} \\
+        \\
+    \end{tabular}
+\end{center}
 }

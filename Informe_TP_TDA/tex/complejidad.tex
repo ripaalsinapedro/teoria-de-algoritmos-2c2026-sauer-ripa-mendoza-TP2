@@ -1,8 +1,8 @@
 \section{Complejidad}
 
-La complejidad del algoritmo se puede ver como la complejidad de las siguentes partes, tomando siempre $N$, como la cantidad de monedas.
+La complejidad del algoritmo se puede ver como la complejidad de las siguentes subpartes, tomando siempre $N$, como la cantidad de monedas.
 
-\subsection{Complejidad del algoritmo para obtener la matriz optima}
+\subsection{Complejidad del algoritmo para obtener la matriz óptima}
 
 El algoritmo para obtener la matriz optima, tiene la siguente complejidad.
 
@@ -10,7 +10,7 @@ El algoritmo para obtener la matriz optima, tiene la siguente complejidad.
     \item Crear la matriz \texttt{opt} de $N \times N$ $\mathcal{O}(N^2)$.
     \item Plantear los casos base de una moneda $\mathcal{O}(N)$.
     \item Plantear los casos base de dos monedas $\mathcal{O}(N)$.
-    \item Completar la matriz optima $\mathcal{O}(N^2)$, recorro la matriz de $N \times N$ y hago un trabajo de $\mathcal{O}(1)$ por iteracion.
+    \item Completar la matriz óptima $\mathcal{O}(N^2)$, recorro la matriz de $N \times N$ y hago un trabajo de $\mathcal{O}(1)$ por iteración.
 \end{enumerate}
 
 Por lo que la complejidad nos queda.
@@ -19,9 +19,9 @@ Por lo que la complejidad nos queda.
 T(N) = \mathcal{O}(N^2 + N + N + N^2) = \mathcal{O}(N^2)
 \]
 
-\subsection{El algoritmo para reconstruir la solucion}
+\subsection{El algoritmo para reconstruir la solución}
 
-El algoritmo para reconstruir la solucion tiene la siguente complejidad.
+El algoritmo para reconstruir la solución tiene la siguente complejidad.
 
 \begin{enumerate}
     \item Trabajo por llamada recursiva. En cada llamda realiza operaciones como comparaciones, accesos a listas y operaciones arimeticas, todas con una complejidad de $\mathcal{O}(1)$.
@@ -36,7 +36,7 @@ T(N) = \mathcal{O}(N)
 
 \subsection{Complejidad total}
 
-Finalmente la complejidad total del algoritmo, desde calcular la matriz de resultados, hasta calcular la secuencia que se debe seguir para llegar al maximo encontrado, es la suma de ambas partes del algoritmo. Por lo que la complejidad total queda.
+Finalmente la complejidad total del algoritmo, desde calcular la matriz de resultados, hasta calcular la secuencia que se debe seguir para llegar al máximo encontrado, es la suma de ambas partes del algoritmo. Por lo que la complejidad total queda.
 
 \[
 T(N) = \mathcal{O}(N^2 + N) = \mathcal{O}(N^2)

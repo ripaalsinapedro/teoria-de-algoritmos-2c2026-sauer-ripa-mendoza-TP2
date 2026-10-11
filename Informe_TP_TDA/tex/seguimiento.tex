@@ -15,7 +15,7 @@ Si Sophia hubiera seguido con su estrategia \textit{greedy} del TP1, tomando la 
     \item \textbf{Monedas de Mateo:} $[85, 10] \implies \text{Ganancia} = 85 + 10 = 95$
 \end{itemize}
 
-Si comparamos las ganancias obtenidas ($60$ vs. $90$), se observa claramente que el enfoque \textit{greedy} no es optimo, ya que la ganancia de Mateo resulta ser mayor a la de Sophia.
+Si comparamos las ganancias obtenidas ($55$ vs. $95$), se observa claramente que el enfoque \textit{greedy} no es óptimo, ya que la ganancia de Mateo resulta ser mayor a la de Sophia.
 
 Por otro lado, con nuestro algoritmo, realizamos los siguentes pasos.
 
@@ -69,7 +69,7 @@ Por otro lado, con nuestro algoritmo, realizamos los siguentes pasos.
     \end{table}
 \end{enumerate}
 
-Vemos entonces que nuestra nueva ganancia maxima, encontrada en la esquina superior derecha de nuestra tabla, es de $110$, mayor a la de nuestro algoritmo \textit{greedy}.Finalmente para obtener la secuencia de monedas que deberia elegir Sophia a partir de la matriz $OPT$ ya calculada para $M = [20, 5, 10, 85, 30]$, el recorrido recursivo desde el estado inicial $(i=1, j=5)$ es el siguente.
+Vemos entonces que nuestra nueva ganancia máxima, encontrada en la esquina superior derecha de nuestra tabla, es de $110$, mayor a la de nuestro algoritmo \textit{greedy}. Finalmente para obtener la secuencia de monedas que deberia elegir Sophia a partir de la matriz $OPT$ ya calculada para $M = [20, 5, 10, 85, 30]$, el recorrido recursivo desde el estado inicial $(i=1, j=5)$ es el siguente.
 
 \begin{enumerate}
     \item \textbf{Estado inicial} $(i=1, j=5) \implies \text{Rango } [20, 5, 10, 85, 30]$:
@@ -90,18 +90,18 @@ Vemos entonces que nuestra nueva ganancia maxima, encontrada en la esquina super
         \item \textbf{Siguiente estado}: $(i=2, j=3)$.
     \end{itemize}
 
-    \item \textbf{Estado} $(i=2, j=3) \implies \text{Rango } [5, 10]$ (Caso base de 2 elementos):
+    \item \textbf{Estado} $(i=2, j=3) \implies \text{Rango } [5]$ (Caso base de 1 elemento):
     \begin{itemize}
-        \item Sophia elige la moneda máxima entre $M[2]=5$ y $M[3]=10$.
-        \item \textbf{Decisión}: Sophia elige $10$.
-        \item \textbf{Moneda guardada}: $M[3] = 10$.
+        \item Sophia elige la moneda$M[2]=5$.
+        \item \textbf{Decisión}: Sophia elige $5$.
+        \item \textbf{Moneda guardada}: $M[3] = 6$.
     \end{itemize}
 \end{enumerate}
 
 \textbf{Resultado final del seguimiento:}
 \begin{itemize}
-    \item \textbf{Monedas elegidas por Sophia ($s$):} $[20, 85, 10]$, con una ganancia acumulada de $115$.
-    \item \textbf{Monedas elegidas por Mateo:} $[30, 5]$, con una ganancia acumulada de $35$.
+    \item \textbf{Monedas elegidas por Sophia ($s$):} $[20, 85, 5]$, con una ganancia acumulada de $110$.
+    \item \textbf{Monedas elegidas por Mateo:} $[30, 10]$, con una ganancia acumulada de $40$.
 \end{itemize}
 
 \subsection{Ejemplo 2 - 10 Monedas}
@@ -186,16 +186,13 @@ Mediante nuestro algoritmo, realizamos los siguentes pasos para hallar nuestra m
     \end{table}
 \end{enumerate}
 
-Podemos ver que efectivamente encontramos nuestro maximo valor acumulado en la esquina superior derecha de nuestra matriz, el valor $2338$, que coincide con el valor esperado. Luego si queremes encontrar el valor acumulada de Mateo, no basta con sumar los valores del arreglo original, dandos asi el valor total de las monedas, y luego restando la ganancia obtenida por Sophia.
-
+Podemos ver que efectivamente encontramos nuestro maximo valor acumulado en la esquina superior derecha de nuestra matriz, el valor $2338$, que coincide con el valor esperado. Luego si queremes encontrar el valor acumulada de Mateo, basta con sumar los valores del arreglo original, dandos asi el valor total de las monedas, y luego restando la ganancia obtenida por Sophia.
 \[
 \text{Ganancia de Mateo} = \sum_{k=1}^{n} M[k] - \text{Ganancia de Sophia} = 4118 - 2338 = 1780
 \]
-
-Podemos ver que nuestro algoritmo encontro la solucion optima ya que la ganancia de Sophia es mayor a la de Mateo, $4118 > 1780$.
+Podemos ver que nuestro algoritmo encontro la solucion optima ya que la ganancia de Sophia es mayor a la de Mateo, $2338 > 1780$.
 
 Una vez tenemos la matriz $opt$, nos queda recontruir la solucion como hizimos en el ejemplo anterior, para encontrar la secuencia de monedas que debe elegir Sophia en cada turno. Vemos que nos queda que Sophia debe elegir las siguentes Monedas.
-
 \[
 \text{Monedas Sophia} = M = [145, 781, 568, 362, 482]
 \]
@@ -227,3 +224,89 @@ $i \setminus j$ & 1 & 2 & 3 & 4 \\
 \end{table}
 
 Donde vemos nuevamente que la maxima ganancia que puede obtener Sophia es de $15$, que sigue siendo igual a la de Mateo.
+
+\subsection{Ejemplo 4 - 8 Monedas}
+ 
+Tomemos el arreglo
+\[
+M = [14, 2, 9, 31, 6, 18, 4, 22]
+\]
+ 
+Con la estrategia \textit{greedy} del TP1 (tomar la mayor de las puntas), la secuencia es: Sophia $22$, Mateo $14$, Sophia $4$, Mateo $18$, Sophia $6$, Mateo $31$, Sophia $9$, Mateo $2$. Esto da $[22, 4, 6, 9] \implies 41$ para Sophia y $[14, 18, 31, 2] \implies 65$ para Mateo, asi que el \textit{greedy} pierde.
+ 
+Con nuestro algoritmo, la matriz optima ($N = 8$) queda:
+ 
+\begin{table}[H]
+\centering
+\begin{tabular}{ccccccccc}
+\toprule
+$i \setminus j$ & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 \\
+\midrule
+1 & 14 & 14 & 16 & 40 & 47 & 51 & 65 & 73 \\
+2 & -- & 2  & 9  & 33 & 33 & 51 & 51 & 73 \\
+3 & -- & -- & 9  & 31 & 15 & 49 & 19 & 71 \\
+4 & -- & -- & -- & 31 & 31 & 37 & 49 & 41 \\
+5 & -- & -- & -- & -- & 6  & 18 & 10 & 40 \\
+6 & -- & -- & -- & -- & -- & 18 & 18 & 26 \\
+7 & -- & -- & -- & -- & -- & -- & 4  & 22 \\
+8 & -- & -- & -- & -- & -- & -- & -- & 22 \\
+\bottomrule
+\end{tabular}
+\end{table}
+ 
+Como ejemplo de una celda: para $OPT[1][8]$, si Sophia toma $M[8]=22$, Mateo ve $M[1]=14$ y $M[7]=4$, toma $14$ y queda $OPT[2][7] = 51$, por lo que obtiene $22 + 51 = 73$. Si toma $M[1]=14$, Mateo ve $M[2]=2$ y $M[8]=22$, toma $22$ y queda tambien $OPT[2][7]$, obteniendo $14 + 51 = 65$. Gana la primera opcion.
+ 
+La ganancia de Sophia es $73$. La de Mateo es
+\[
+\text{Ganancia de Mateo} = \sum_{k=1}^{n} M[k] - \text{Ganancia de Sophia} = 106 - 73 = 33
+\]
+\[
+\text{Monedas Sophia} = [22, 2, 31, 18] \implies 73
+\qquad
+\text{Monedas Mateo} = [14, 9, 6, 4] \implies 33
+\]
+\subsection{Ejemplo 5 - 2 Monedas}
+
+Tomemos el arreglo
+\[
+M = [13, 6]
+\]
+
+Con $N = 2$ solo hay casos base: las celdas de una moneda valen la moneda, y la de dos monedas vale la mayor de las dos, porque Sophia elige primero y Mateo se queda con la restante.
+
+\begin{table}[H]
+\centering
+\begin{tabular}{ccc}
+\toprule
+$i \setminus j$ & 1 & 2 \\
+\midrule
+1 & 13 & 13 \\
+2 & -- & 6  \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+La ganancia maxima de Sophia es $OPT[1][2] = \max(13, 6) = 13$, y la de Mateo es $13 + 6 - 13 = 6$.
+
+Para la reconstruccion, el estado inicial $(i=1, j=2)$ es el caso base de dos elementos: Sophia elige la mayor, $M[1] = 13$ (la primera), y Mateo toma la restante, $M[2] = 6$ (la ultima).
+
+\textbf{Resultado final:}
+\begin{itemize}
+    \item \textbf{Monedas de Sophia:} $[13] \implies 13$
+    \item \textbf{Monedas de Mateo:} $[6] \implies 6$
+\end{itemize}
+\subsection{Ejemplo 6 - Cantidad impar de monedas donde Sophia no puede ganar}
+ 
+Tomemos el arreglo
+\[
+M = [10, 60, 20, 35, 5]
+\]
+ 
+Con $N$ impar, Sophia hace una jugada mas que Mateo, pero eso no le alcanza si las monedas grandes quedan del lado de Mateo. La ganancia maxima es $OPT[1][5] = 35$, con la secuencia: Sophia $10$, Mateo $60$, Sophia $20$, Mateo $35$, Sophia $5$ (la ultima moneda, que es a la vez la primera y la ultima del rango). Entonces:
+ 
+\[
+\text{Ganancia de Sophia} = 35 < 95 = 130 - 35 = \text{Ganancia de Mateo}
+\]
+ 
+Este caso muestra que, sin importar lo bien que juegue Sophia, existen arreglos donde Mateo gana.
+\newpage

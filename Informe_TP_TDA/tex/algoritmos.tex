@@ -4,18 +4,19 @@ En este trabajo de ejemplo realizaremos el análisis teórico y empírico de dif
 
 \subsection{Algoritmo para encontrar el optimo}
 
-El algoritmo plantea una matriz de $N \times N$, siendo $n$ la cantidad de monedas, donde para cada coordenada $i$, $j$ de la matriz, encontramos una solucion para un problema de dimensiones $i$, $j$.
-Luego se llena las diagonales, donde las corrdenads $i$ y $j$ son iguales, $i = j$, y la diagonal donde la coordenada $j$ es uno mas que la $i$, $i = j + 1$, con los valores de los dos casos base, siendo estos:
+El algoritmo presente construyer una matriz de $N \times N$, siendo $n$ la cantidad de monedas totales. Cada posición $(i,j)$ de la matriz almacena la solución óptima para el subproblema de dimesiones correspondientes.
+En primer lugar, se completan las diagonales correspondientes a los casos base, la diagonal principal $(i = j)$  y la superiro $(i = j + 1)$ con los siguientes valores, correspondientes a los dos casos base:
+
 \begin{itemize}
     \item tener una sola mondea, donde el optimo es la moneda en si.
     \item tener dos monedas, donde el optimo es la mas grande entre la dos.
 \end{itemize}
-Luego recorre la parte superior de la matriz (ya que los punteros $i$, $j$ que 
-apuntan al principio y final del array de monedas respectivametne, nunca se
-intercambian, lo que es igual, se cummple que $i <= j$), llenando cada lugar de la matriz con la solucion del problema de tamaño $i$, $j$.
-Es asi que una vez completamos la matriz, encontramos la solucion optima para nuestro problema original en la coordenada $i = 0$ y $j = n$.
+Luego recorremos la parte superior de la matriz (ya que los punteros $i$, $j$ que 
+apuntan al principio y final del array de monedas respectivamente, nunca se
+intercambian, lo que es igual y se cumple que $i <= j$), llenando cada posición de la matriz con la solucion del problema de tamaño correspondiente.
+Es asi que una vez completamos toda la matriz, encontramos la solucion óptima para nuestro problema original en las coordenada $i = 0$ y $j = n$.
 
-Aqui el codigo usado para generar la matriz con los valores optimos para todos los problemas de dimensiones $i$, $j$.
+Aqui el código usado para generar la matriz con los valores óptimos para todos los problemas de dimensiones $i$, $j$.
 
 \begin{lstlisting}[language=Python]
 def elegir(monedas):
@@ -44,47 +45,45 @@ def elegir(monedas):
             
     maxima_ganancia = opt[0][len(opt) - 1]
     sol = solucion(opt, monedas, [], 0, len(opt) - 1)
-    return sol
+    return maxima_ganancia, sol
 \end{lstlisting}
+\newpage
 
-La forma de obtener nuesta matriz optima es la siguente.
-Se plantea que para cada problema de dimensiones $i$, $j$, donde queremos encontrar que moneda elegir para maximizar la ganancia, la moneda en la posicion $i$ (la primera), y la moneda $j$ (la ultima), se puden analizar las siguentes opciones.
+La matriz de solución óptima se construye de la siguiente manera. Para cada subproblema definido por los indices $i$ y $j$, cuyo objetivo es maximizar la ganancia, se analizan dos posibles elecciones, tomar la primera moneda ubicada en $i$ o tomar la que se encuentra ubicada en la ultima posocion $j$. A partir de estas dos alternativas se pueden analizar las siguientes opciones:
 
 \begin{enumerate}
     \item Sophia toma la primera moneda, la moneda $i$ y Mateo elige la mayor entre las monedas $i + 1$ y $j$.
 
     \begin{enumerate}
-        \item Si mateo eligie la moneda $i + 1$ el rango $(i, j)$ se achica a $(i + 2, j)$, por lo que nuestra solucion sera el valor de la moneda $i$ mas la solucion del rango $(i + 2, j)$.
+        \item Si mateo eligie la moneda $i + 1$ el rango $(i, j)$ se achica a $(i + 2, j)$, por lo que nuestra solución sera el valor de la moneda $i$ más la solución del rango $(i + 2, j)$.
 
-        $opt(i, j) = moneda_i + opt(i + 2, j)$
+        $$opt(i, j) = moneda_i + opt(i + 2, j)$$
 
-        \item Si mateo eligie la moneda j el rango $(i, j)$ se achica a $(i + 1, j - 1)$, por lo que nuestra solucion sera el valor de la moneda $i$ mas la solucion del rango $(i + 1, j - j)$.
+        \item Si mateo eligie la moneda j el rango $(i, j)$ se achica a $(i + 1, j - 1)$, por lo que nuestra solución sera el valor de la moneda $i$ más la solución del rango $(i + 1, j - j)$.
 
-        $opt(i, j) = moneda_i + opt(i + 1, j - 1)$
+        $$opt(i, j) = moneda_i + opt(i + 1, j - 1)$$
 
     \end{enumerate}
 
-    \item Sophia toma ahora la ultima moneda, la moneda $j$ y Mateo elige la mayor entre las monedas $i$ y $j - 1$.
+    \item Sophia toma ahora la última moneda, la moneda $j$ y Mateo elige la mayor entre las monedas $i$ y $j - 1$.
 
     \begin{enumerate}
-        \item Si mateo eligio la moneda $i$ el rango $(i, j)$ se achica a $(i + 1, j - 1)$, por lo que nuestra solucion sera el valor de la moneda j mas la solucion del rango $(i + 1, j - 1)$.
+        \item Si mateo eligio la moneda $i$ el rango $(i, j)$ se achica a $(i + 1, j - 1)$, por lo que nuestra solución sera el valor de la moneda j más la solución del rango $(i + 1, j - 1)$.
 
-        $opt(i, j) = moneda_j + opt(i + 1, j - 1)$
+        $$opt(i, j) = moneda_j + opt(i + 1, j - 1)$$
 
-        \item Si mateo eligio la moneda $j$ el rango $(i, j)$ se achica a $(i, j - 2)$, por lo que nuestra solucion sera el valor de la moneda j mas la solucion del rango $(i, j - 2)$.
+        \item Si mateo eligio la moneda $j$ el rango $(i, j)$ se achica a $(i, j - 2)$, por lo que nuestra solución sera el valor de la moneda j más la solución del rango $(i, j - 2)$.
 
-        $opt(i, j) = moneda_i + opt(i, j - 2)$
+        $$opt(i, j) = moneda_i + opt(i, j - 2)$$
     \end{enumerate}
 \end{enumerate}
 
-Luego de plantear las cuatro posibles situaciones, podemos ver que, 
-sin importar lo que elija sophia, mateo siempre elije la moneda mas grande
-por lo que en ambos casos en simplemente realizar una comparacion para ver cual 
-es mas grande, segun la situacion de monedas. Esta comparacion determina el rango
-de mis soluciones parciales. Luego obtengo mis soluciones parciales para los rangos 
-respectivos segun la eleccion de mateo, me quedo con aquella solucion, que maximize mi 
-ganancia. 
-Entonces Siendo $opt_i$, la solucion para un rango $(i_i, j_i)$, asumiendo que sophia toma la $moneda i$, y, siendo $opt_j$, la solucion para un rango $(i_j, j_j)$, asumiendo que sophia toma la moneda $j$, el optimo para el rango $(i, j)$ queda de la siguente manera.
+Luego de plantear estas cuatro situaciones, podemos observar que, independientemente de la elección de Sophia, Mateo siempre elegirá la moneda de mayor valor entre las dos disponibles en los extremos del intervalo. Por lo tanto, en cada caso, basta con comparar ambas monedas para determinar cuál elegirá Mateo.
+
+
+Esta comparación permite determinar los límites del subproblema restante y, a partir de ellos, obtener las soluciones parciales correspondientes a cada alternativa. Finalmente, se comparan ambas soluciones y se selecciona aquella que maximiza la ganancia de Sophia.
+
+Siendo $opt_i$ la solución del subproblema resultante de que Sophia elija la moneda ubicada en la posición $i$, y $opt_j$ la solución del subproblema resultante de que Sophia elija la moneda ubicada en la posición $j$ , el valor óptimo para el intervalo $(i,j)$ se obtiene de la siguiente manera:
 
 \[
 \text{opt}(i, j) = \max \left( \text{moneda}_i + \text{opt}_i, \; \text{moneda}_j + \text{opt}_j \right)
@@ -116,7 +115,7 @@ En el turno de Sophia, de haber monedas de igual valor en ambos extremos tal que
 \text{moneda}_i = \text{moneda}_j
 \]
 
-El desempate termina siendo el maximo entre las soluciones parciales del problema. Vemos que el optimo para el problema $(i, j)$ termina siendo.
+El desempate termina siendo el maximo entre las soluciones parciales del problema. Vemos que el óptimo para el problema $(i, j)$ termina siendo.
 
 \[
 \text{opt}(i, j) = 
@@ -128,7 +127,7 @@ El desempate termina siendo el maximo entre las soluciones parciales del problem
 \text{opt}(i, j) = \max \left(\text{opt}_i, \;\text{opt}_j \right)
 \]
 
-En caso de que tengamos, de nuevo, mondeas de igual valor en ambos extremos, pero en este caso, siendo el turno de Mateo, ahora lo que debemos analizar es como se reduce la dimension de nuestro problema. Anteriormente habiamos visto que.
+En caso de que tengamos, de nuevo, mondeas de igual valor en ambos extremos, pero en este caso, siendo el turno de Mateo, ahora lo que debemos analizar es como se reduce la dimensión de nuestro problema. Anteriormente habiamos visto que.
 
 \[
 \text{opt}_i = 
@@ -167,22 +166,22 @@ Los optimos resultan.
 \]
 
 
-\subsection{Algoritmo para obtener la reconstruccion de la solucion}
+\subsection{Algoritmo para obtener la reconstruccion de la solución}
 
-Partiendo de la matriz optima, desarrollamos un algoritmo que brinde la secuencia de monedas que se deberian elegir para obtener la ganancia maxima, mediante llamadas recursivas.
+Partiendo de la matriz óptima, desarrollamos un algoritmo que brinde la secuencia de monedas que se deberian elegir para obtener la ganancia maxima, mediante llamadas recursivas.
 
 \begin{enumerate}
     \item Casos base.
     \begin{itemize}
-        \item $i < j$ El rango de monedas es invalido, finalizo la recursion y devuelvo la solucion.
+        \item $i < j$ El rango de monedas es invalido, finalizo la recursión y devuelvo la solución.
         \item $i = j + 1$ Quedan solo dos monedas, por lo que Sophia elige la mayor
     \end{itemize}
 
-    \item Evaluacion de alternativas (esta es la parte donde analizamos que sub problema conforma la solucion del problema actual y se simula la eleccion de monedas).
+    \item Evaluacion de alternativas (esta es la parte donde analizamos que subproblema conforma la solución del problema actual y se simula la elección de monedas).
     \begin{itemize}
         \item Se calcula $opt_i$ y $opt_j$ de la misma manera que en el algoritmo anterior, siendo los optimos si se elije la moneda $i$ o la moneda $j$, y en concecuencia que moneda elijiria Mateo (la mayor), y como estas decisiones afectan las dimensiones de nuestro problema.
-        \item Analizamos que optimo nos da la mayor ganancia si le sumamos la mondea correspondiente (porque es lo que el algoritmo hubiera hecho), y en base al mayor agremos el indice $i$ o el $j$ a la solucion, respectivametne.
-        \item Por ultimo vemos que moneda elije Mateo, cual es la mayor, y llamamos a la funcion recursivamente con el nuevo rango $i$, $j$ conseguido luego de analizar las decisones que tomarian ambos bandos.
+        \item Analizamos que óptimo nos da la mayor ganancia si le sumamos la mondea correspondiente (porque es lo que el algoritmo hubiera hecho), y en base al mayor agremos el indice $i$ o el $j$ a la solución, respectivametne.
+        \item Por ultimo vemos que moneda elije Mateo, cual es la mayor, y llamamos a la función recursivamente con el nuevo rango $i$, $j$ conseguido luego de analizar las decisones que tomarian ambos bandos.
     \end{itemize}
 \end{enumerate}
 
@@ -215,3 +214,4 @@ else:
 \end{lstlisting}
 
 Siguendo estos pasos recursivamente obtenemos la secuencia de monedas que Sophia deberia elegir para obtener la ganancia maxima.
+\newpage

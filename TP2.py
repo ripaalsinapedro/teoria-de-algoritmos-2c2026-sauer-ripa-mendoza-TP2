@@ -1,4 +1,5 @@
 import sys
+sys.setrecursionlimit(10000)
 
 def elegir(monedas):
     opt = [[0] * len(monedas) for i in range(len(monedas))]
@@ -62,6 +63,27 @@ def procesar_texto(archivo):
         monedas = [int(x) for x in linea.split(";")]
     return monedas
 
+def obtener_secuencia_total(datos, elegidos):
+    secuencia = []
+    i, j = 0, len(datos) - 1
+    
+    for e in elegidos:
+        if datos[e] == datos[i]:
+            secuencia.append(f"Sophia agarra la primera ({datos[e]})")
+            i += 1
+        else:
+            secuencia.append(f"Sophia, agarra la ultima ({datos[e]})")
+            j -= 1
+            
+        if datos[i] >= datos[j]:
+            secuencia.append(f"Mateo agarra la primera ({datos[i]})")
+            i += 1
+        else:
+            secuencia.append(f"Mateo, agarra la ultima ({datos[j]})")
+            j -= 1
+        
+    return secuencia
+
     
 def main():
     ruta_entrada = sys.argv[1]
@@ -74,9 +96,10 @@ def main():
             ganancia_Mateo = ganancia_max - ganancia_Sophia
             
             if ganancia_Sophia > ganancia_Mateo:
-                for i in range(len(elegidos)):
-                    print("Ultima moneda para " if elegidos[i] else "Primera moneda para ", end="")
-                    print("Sophia; " if not (i % 2) else "Mateo; ", end="")
+                secuencia = obtener_secuencia_total(datos, elegidos)
+                
+                for s in secuencia:
+                    print(s, ";", end="")
                 
                 print("")
                 print("Gnancia de Sophia: ", ganancia_Sophia)

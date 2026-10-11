@@ -1,1 +1,10 @@
 \section{Conclusiones}
+En este informe se presentó una forma en la que Sophia puede implementar un algoritmo de Programación Dinámica para poder maximizar la sumatoria de valores de cada moneda que elija en el juego con su hermano Mateo, el cual ya sabe implementar los Algoritmos Greedy.
+
+El objetivo de este algoritmo es descomponer el problema principal en subproblemas más pequeños. Almacenar ciertas soluciones que permiten simplificar los cálculos y evitar recomputaciones para poder obtener las ganancias óptimas en cada ronda considerando las decisiones anteriores en el rango actual.
+
+Para poder realizar un análisis de este algoritmo tuvimos que reconocer ciertos elementos que son fundamentales para su desarrollo. Estos son: $n$, la cantidad total de monedas, $i$ y $j$, que representan las posiciones de la primera y última moneda, respectivamente. Siendo $n$ la responsable de la complejidad de nuestro algoritmo, ya que es la encargada de determinar el tamaño de nuestra matriz de optimalidad, la cantidad de elecciones y la cantidad de llamados recursivos para la reconstrucción, a partir de ella pudimos plantear la complejidad algorítmica de nuestra solución, que es $O(n^2)$.
+
+Finalmente, el algoritmo presentado fue probado en los casos presentados por la cátedra y por ejemplos desarrollados por nosotros, incluyendo ciertos casos particulares que ponen a prueba los casos base. Con estas pruebas pudimos determinar que el resultado obtenido para Sophia es el más óptimo posible, aún asi no podemos garantizar que va a ganar en todas las partidas.
+
+Si bien el objetivo de este trabajo es poder ayudar a Sophia con su problema, también nos ayudó a nosotros a afianzar el aprendizaje sobre el diseño, análisis y formas de justificar los algoritmos de Programación Dinámica.

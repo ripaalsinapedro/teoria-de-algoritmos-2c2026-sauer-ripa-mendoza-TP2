@@ -1,11 +1,11 @@
 # Fdb version 4
-["biber main"] 0 "main.bcf" "main.bbl" "main" 1791753737.87704 -1
-  "main.bcf" 1791753737 108105 1b4803db1600ff5a8dc6c762cf1b654d "pdflatex"
+["biber main"] 0 "main.bcf" "main.bbl" "main" 1791758203.51462 -1
+  "main.bcf" 1791758203 108105 1b4803db1600ff5a8dc6c762cf1b654d "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1791753735.72236 "c:/Users/kevin/OneDrive/Documentos/Franco Mendoza/Practicas/TDA/TP2-2/teoria-de-algoritmos-2c2026-sauer-ripa-mendoza-TP2/Informe_TP_TDA/main.tex" "main.pdf" "main" 1791753737.87803 0
+["pdflatex"] 1791758201.32802 "c:/Users/kevin/OneDrive/Documentos/Franco Mendoza/Practicas/TDA/TP2-2/teoria-de-algoritmos-2c2026-sauer-ripa-mendoza-TP2/Informe_TP_TDA/main.tex" "main.pdf" "main" 1791758203.51539 0
   "c:/Users/kevin/OneDrive/Documentos/Franco Mendoza/Practicas/TDA/TP2-2/teoria-de-algoritmos-2c2026-sauer-ripa-mendoza-TP2/Informe_TP_TDA/main.tex" 1791745334 2613 6189c266dc50175426dd4cd790857ae0 ""
   "c:/texlive/2026/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1790362931 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "c:/texlive/2026/texmf-dist/fonts/map/fontname/texfonts.map" 1790364264 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -236,17 +236,17 @@
   "estilo.cls" 1791745673 3912 89952a9784d431e29afa69d419b3b79a ""
   "img/grafico_analisis.png" 1791689584 36661 e16e86406ed74b82d388a8237e643a64 ""
   "logo.pdf" 1791689584 23517 3c0578cc80d5bad92ee4aa88ed38c1bb ""
-  "main.atfi" 1791753737 23 33e109ecf84d2ac55814cb2442ea01dc "pdflatex"
-  "main.aux" 1791753737 4109 d5cf3c8ae42ee3bfd9675b364048966e "pdflatex"
+  "main.atfi" 1791758203 23 33e109ecf84d2ac55814cb2442ea01dc "pdflatex"
+  "main.aux" 1791758203 4109 4182c5fc77954e990af1ad6124127482 "pdflatex"
   "main.bbl" 1791744913 0 d41d8cd98f00b204e9800998ecf8427e "biber main"
-  "main.out" 1791753737 5162 8e0555c1d9c238e655f8e3ac1e2a528a "pdflatex"
-  "main.run.xml" 1791753737 2274 3c9efbcb7467da793e6933a55675e6bc "pdflatex"
+  "main.out" 1791758203 5162 8e0555c1d9c238e655f8e3ac1e2a528a "pdflatex"
+  "main.run.xml" 1791758203 2274 3c9efbcb7467da793e6933a55675e6bc "pdflatex"
   "main.tex" 1791745334 2613 6189c266dc50175426dd4cd790857ae0 ""
   "tex/algoritmos.tex" 1791750835 10254 9778579482b1025b63838d7fc78a7e1a ""
   "tex/complejidad.tex" 1791751746 2274 556db47c9d2af1fbbbadae09319b4ed1 ""
-  "tex/conclusiones.tex" 1791689584 22 191e45bd541fc2e414e492f72225b680 ""
+  "tex/conclusiones.tex" 1791758200 1824 de7bba8868195709114cce4a15226995 ""
   "tex/demostracion.tex" 1791689584 0 d41d8cd98f00b204e9800998ecf8427e ""
-  "tex/graficos.tex" 1791689584 3955 0606fb23c966840d33334af65437b7ff ""
+  "tex/graficos.tex" 1791754214 3965 8c41db3821db4c9bc5fa45dcb3705f5e ""
   "tex/introduccion.tex" 1791746505 2684 1a7b3c45cac50a67de9841765a3e600f ""
   "tex/seguimiento.tex" 1791753732 12854 ef313efd37fe1769c0e512a0226c8a9e ""
   (generated)

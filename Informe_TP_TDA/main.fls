@@ -585,6 +585,10 @@ INPUT ./logo.pdf
 INPUT ./logo.pdf
 INPUT ./logo.pdf
 INPUT c:/texlive/2026/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm
+INPUT ./logo.pdf
+INPUT ./logo.pdf
+INPUT ./logo.pdf
+INPUT c:/texlive/2026/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
 INPUT ./tex/conclusiones.tex
 INPUT ./tex/conclusiones.tex
 INPUT ./tex/conclusiones.tex
@@ -593,7 +597,6 @@ INPUT tex/conclusiones.tex
 INPUT ./logo.pdf
 INPUT ./logo.pdf
 INPUT ./logo.pdf
-INPUT c:/texlive/2026/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
 INPUT main.aux
 INPUT ./main.out
 INPUT ./main.out

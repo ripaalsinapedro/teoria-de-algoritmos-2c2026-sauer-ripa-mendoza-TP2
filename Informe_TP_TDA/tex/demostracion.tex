@@ -1,0 +1,74 @@
+\section{Demostración de optimalidad de la ecuación de recurrencia}
+Para la demostracion de optimalidad de la ecuacion de recurrencia, vamos a demostrar mediante Induccion, que siempre obtenemos el maximo valor acumulado posible.
+\subsection{Definición de la Proposición}
+Sea una fila de $n$ monedas con valores $V = [v_0, v_1, \dots, v_{n-1}]$ con $v_i \in \mathbb{R}_{> 0}$. Definimos un subproblema sobre el rango continuo de índices $[i, j]$ (con $0 \le i \le j \le n-1$), cuya longitud viene dada por:
+$$L = j - i + 1$$
+
+Definimos la proposición $P(L)$ para todo $L \in \mathbb{N}$ tal que $1 \le L \le n$:
+\begin{quote}
+    $P(L)$: \textit{Para cualquier subfila de $L$ monedas delimitada por los extremos $[i, j]$, el valor calculado por la función $opt(i, j)$ coincide con la ganancia máxima acumulada que Sophia puede asegurarse obtener.}
+\end{quote}
+
+Dado que en cada turno completo de dos jugadas (Sophia seguida de Mateo) se retiran dos monedas de la mesa, el tamaño del subproblema se reduce de $L$ a $L - 2$. Por ello, realizamos una inducción con paso 2, requiriendo dos casos base: $L = 1$ y $L = 2$.
+
+\subsection{Casos base}
+\begin{itemize}
+    \item \textbf{Caso base $L = 1$ ($j = i$):}
+    La subfila contiene una única moneda $v_i$. Es el turno de Sophia y el juego termina inmediatamente después.
+    \begin{itemize}
+        \item Al ser la única opción disponible, Sophia toma $v_i$.
+        \item El valor máximo posible es $v_i$.
+    \end{itemize}
+    Por lo tanto $P(1)$ es verdadera.
+
+    \item \textbf{Caso base $L = 2$:}
+    La subfila contiene dos monedas $[v_i, v_{i+1}]$. Sophia juega primero y Mateo toma la moneda restante:
+    \begin{itemize}
+        \item Si Sophia elige la moneda izquierda ($v_i$), Mateo se queda con $v_{i+1}$ y Sophia acumula $v_i$.
+        \item Si Sophia elige la moneda derecha ($v_{i+1}$), Mateo se queda con $v_i$ y Sophia acumula $v_{i+1}$.
+    \end{itemize}
+    Como no quedan mas monedas, la decision optima es elegir directamente la moneda mayor entre ambas, por lo que Sophia la elige, y $P(2)$ es verdadera.
+\end{itemize}
+
+\subsection{Paso inductivo}
+\begin{itemize}
+    \item \textbf{Hipótesis Inductiva:} Asumimos que para todo $k < L$ (con $k \in \mathbb{N}$), la proposición $P(k)$ es verdadera. Osea que para cualquier cantidad de monedas de tamaño menor a L, con nuestra ecuacion de recurrencia, Sophia obtiene la maxima ganancia posible.
+    \item \textbf{Tesis Inductiva:} Se debe demostrar que $P(L)$ es verdadera para cualquier subfila de longitud $L \ge 3$.
+\end{itemize}
+
+\paragraph{Demostración por metodo directo:}
+Consideremos una subfila cualquiera de longitud $L \ge 3$ con extremos $[i, j]$. Dado que Sophia comienza jugando puede elegir entre $v_i$ y $v_j$.
+
+\begin{enumerate}
+    \item \textbf{Posibilidad 1: Sophia elige $v_i$}
+    \begin{itemize}
+        \item Sophia suma $v_i$ a su acumulado.
+        \item La subfila restante es $L[i+1: j]$, con longitud $L - 1$.
+        \item Le corresponde jugar a Mateo. Toma obligatoriamente $\max(v_{i+1}, v_j)$.
+        \item Ahora, Sophia tiene que jugar con una fila de longitud $(L - 1) - 1 = L - 2$.
+        \item Como $L - 2 < L$, estamos dentro de los casos de la Hipotesis, y las elecciones de Sophia se rigen por $opt(i+2, j)$ o $opt(i+1, j-1)$.
+        \item Por consiguiente, el valor máximo garantizado que Sophia puede obtener al seleccionar $v_i$ primero es:
+        $$ ganancia = v_i + opt_i$$
+        donde $opt_i$ representa el valor óptimo del subproblema resultante según la jugada forzada de Mateo.
+    \end{itemize}
+
+    \item \textbf{Posibilidad 2: Sophia elige $v_j$}
+    \begin{itemize}
+        \item Sophia suma $v_j$ a su acumulado.
+        \item La subfila restante es $L[i+1: j]$ (longitud $L - 1$).
+        \item Mateo juega, eligiendo $\max(v_i, v_{j-1})$:
+        \item La subfila restante vuelve a tener longitud $L - 2 < L$.
+        \item Por la Hipotesis, el valor restante se resuelve de manera óptima por $opt_j$.
+        \item En consecuencia, la ganancia máxima garantizada por la derecha es:
+        $$ganancia = v_j + opt_j$$
+    \end{itemize}
+
+    \item \textbf{Elección óptima global:}
+    Dado que las dos únicas acciones posibles para Sophia al inicio son tomar la moneda izquierda o la derecha, la estrategia óptima consiste en comparar los rendimientos garantizados de ambas ramas y optar por el máximo:
+    $$\max(v_i + opt_i, \; v_j + opt_j)$$
+    Esta expresión coincide exactamente con la fórmula de recurrencia $opt(i, j)$.
+\end{enumerate}
+Por lo tanto, comprobamos la Hipotesis $P(L)$ 
+
+\subsection{Conclusión}
+Ya demostramos por induccion, que tanto para casos pares como impares, nuestra propuesta maximiza la ganancia para Sophia, esto funciona para todo tamaño $L \ge 1$.

@@ -216,7 +216,7 @@ Si implementamos nuestro algoritmo, vemos que llegamos al mismo resultado. Esto 
 $i \setminus j$ & 1 & 2 & 3 & 4 \\
 \midrule
 1 &  5 & 10 & 15 & 15 \\
-2 & -- &  5 & 10 & 15 \\
+2 & -- & 10 & 10 & 15 \\
 3 & -- & -- & 10 & 10 \\
 4 & -- & -- & -- &  5 \\
 \bottomrule
@@ -265,7 +265,21 @@ La ganancia de Sophia es $73$. La de Mateo es
 \qquad
 \text{Monedas Mateo} = [14, 9, 6, 4] \implies 33
 \]
-\subsection{Ejemplo 5 - 2 Monedas}
+\subsection{Ejemplo 5 - Cantidad impar de monedas donde Sophia no puede ganar}
+ 
+Tomemos el arreglo
+\[
+M = [10, 60, 20, 35, 5]
+\]
+ 
+Con $N$ impar, Sophia hace una jugada mas que Mateo, pero eso no le alcanza si las monedas grandes quedan del lado de Mateo. La ganancia maxima es $OPT[1][5] = 35$, con la secuencia: Sophia $10$, Mateo $60$, Sophia $20$, Mateo $35$, Sophia $5$ (la ultima moneda, que es a la vez la primera y la ultima del rango). Entonces:
+ 
+\[
+\text{Ganancia de Sophia} = 35 < 95 = 130 - 35 = \text{Ganancia de Mateo}
+\]
+ 
+Este caso muestra que, sin importar lo bien que juegue Sophia, existen arreglos donde Mateo gana.
+\subsection{Ejemplo 6 - 2 Monedas}
 
 Tomemos el arreglo
 \[
@@ -295,18 +309,14 @@ Para la reconstruccion, el estado inicial $(i=1, j=2)$ es el caso base de dos el
     \item \textbf{Monedas de Sophia:} $[13] \implies 13$
     \item \textbf{Monedas de Mateo:} $[6] \implies 6$
 \end{itemize}
-\subsection{Ejemplo 6 - Cantidad impar de monedas donde Sophia no puede ganar}
- 
-Tomemos el arreglo
+\subsection{Ejemplo 7 - 1 solo maneda}
+
+Tomamos el arreglo
 \[
-M = [10, 60, 20, 35, 5]
+M = [10]
 \]
- 
-Con $N$ impar, Sophia hace una jugada mas que Mateo, pero eso no le alcanza si las monedas grandes quedan del lado de Mateo. La ganancia maxima es $OPT[1][5] = 35$, con la secuencia: Sophia $10$, Mateo $60$, Sophia $20$, Mateo $35$, Sophia $5$ (la ultima moneda, que es a la vez la primera y la ultima del rango). Entonces:
- 
+Este caso nos ayuda a probar uno de los casos base. Sophia al ser la primera elegir toma la única moneda. Entonces :
 \[
-\text{Ganancia de Sophia} = 35 < 95 = 130 - 35 = \text{Ganancia de Mateo}
+\text{Ganancia de Sophia} = 10 > 0 = \text{Ganancia de Mateo}
 \]
- 
-Este caso muestra que, sin importar lo bien que juegue Sophia, existen arreglos donde Mateo gana.
 \newpage

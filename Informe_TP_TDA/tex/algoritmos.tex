@@ -1,6 +1,6 @@
 \section{Algoritmo para elegir las monedas}
 
-En este trabajo de ejemplo realizaremos el análisis teórico y empírico de diferentes algoritmos que sirven para resolver el mismo problema: obtener el orden en que se deben elegir las monedas para maximizar la ganancia obtenida de un arreglo de $n$ monedas. 
+En este trabajo realizaremos el análisis teórico y empírico de diferentes algoritmos que sirven para resolver el mismo problema: obtener el orden en que se deben elegir las monedas para maximizar la ganancia obtenida de un arreglo de $n$ monedas. 
 
 \subsection{Algoritmo para encontrar el optimo}
 
@@ -124,7 +124,7 @@ El desempate termina siendo el maximo entre las soluciones parciales del problem
 \]
 
 \[
-\text{opt}(i, j) = \max \left(\text{opt}_i, \;\text{opt}_j \right)
+\text{opt}(i, j) = \text{moneda}_i + \max \left(\text{opt}_i, \;\text{opt}_j \right)
 \]
 
 En caso de que tengamos, de nuevo, mondeas de igual valor en ambos extremos, pero en este caso, siendo el turno de Mateo, ahora lo que debemos analizar es como se reduce la dimensión de nuestro problema. Anteriormente habiamos visto que.
@@ -173,8 +173,9 @@ Partiendo de la matriz óptima, desarrollamos un algoritmo que brinde la secuenc
 \begin{enumerate}
     \item Casos base.
     \begin{itemize}
-        \item $i < j$ El rango de monedas es invalido, finalizo la recursión y devuelvo la solución.
-        \item $i = j + 1$ Quedan solo dos monedas, por lo que Sophia elige la mayor
+        \item $i > j$ El rango de monedas es invalido, finalizo la recursión y devuelvo la solución.
+        \item $ i = j$ queda una moneda, la cual es tomada por Sophia.
+        \item $j = i + 1$ Quedan solo dos monedas, por lo que Sophia elige la mayor.
     \end{itemize}
 
     \item Evaluacion de alternativas (esta es la parte donde analizamos que subproblema conforma la solución del problema actual y se simula la elección de monedas).
@@ -190,7 +191,11 @@ def solucion(opt, monedas, s, i, j):
 if i > j:
     return s
 
-if i == j + 1:
+if i == j:
+    s.append(i)
+    return s
+
+if j == i + 1:
     s.append(i if monedas[i] > monedas[j] else j)
     return s
 

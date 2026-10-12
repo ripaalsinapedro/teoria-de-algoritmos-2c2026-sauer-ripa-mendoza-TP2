@@ -77,7 +77,7 @@
 
 \renewcommand{\headrulewidth}{1pt}
 \renewcommand{\footrulewidth}{1pt}
-\rhead{\footnotesize \textsc {Trabajo práctico 0\\ Teoría de Algoritmos}} % Trabajo práctico
+\rhead{\footnotesize \textsc {Trabajo práctico 2\\ Teoría de Algoritmos}} % Trabajo práctico
 \lhead{\includegraphics[width=2.5cm]{logo}}
 \cfoot{\small \textsc {Página \thepage\ de \pageref*{LastPage}}}
 

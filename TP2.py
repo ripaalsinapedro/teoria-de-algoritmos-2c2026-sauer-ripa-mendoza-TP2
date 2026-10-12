@@ -33,8 +33,11 @@ def elegir(monedas):
 def solucion(opt, monedas, s, i, j):
     if i > j:
         return s
+    if i == j:
+        s.append(i)
+        return s
     
-    if i == j + 1:
+    if j == i + 1:
         s.append(i if monedas[i] > monedas[j] else j)
         return s
     
@@ -75,13 +78,13 @@ def obtener_secuencia_total(datos, elegidos):
             secuencia.append(f"Sophia, agarra la ultima ({datos[e]})")
             j -= 1
             
-        if datos[i] >= datos[j]:
-            secuencia.append(f"Mateo agarra la primera ({datos[i]})")
-            i += 1
-        else:
-            secuencia.append(f"Mateo, agarra la ultima ({datos[j]})")
-            j -= 1
-        
+        if i <= j:
+            if datos[i] > datos[j]:
+                secuencia.append(f"Mateo agarra la primera ({datos[i]})")
+                i += 1
+            else:
+                secuencia.append(f"Mateo, agarra la ultima ({datos[j]})")
+                j -= 1
     return secuencia
 
     
@@ -102,10 +105,10 @@ def main():
                     print(s, ";", end="")
                 
                 print("")
-                print("Gnancia de Sophia: ", ganancia_Sophia)
+                print("Ganancia de Sophia: ", ganancia_Sophia)
                 print("Ganancia de Mateo: ", ganancia_Mateo)
             else:
-                print("El algorimto fallo gano Mateo, o empataron")
+                print("Gano Mateo o empataron")
         else:
             print("El archivo no contiene datos válidos")
             sys.exit(1)
